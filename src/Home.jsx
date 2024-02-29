@@ -4,8 +4,8 @@ import "./Home.scss";
 
 const Home = () => {
   return (
-    <main>
-      <nav className="d-flex justify-content-between p-3">
+    <main className="shadow">
+      <nav className="d-flex justify-content-between p-4 shadow">
         <h2 className="fw-bold">Alex's Lawn Care</h2>
         <div className="d-flex gap-4">
           <button>Home</button>

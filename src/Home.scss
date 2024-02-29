@@ -4,19 +4,17 @@ $primary: black;
 $secondary: white;
 $accent: #3f6634;
 
-main {
-  background-color: $accent;
+nav {
+  background-color: $secondary;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-}
-
-nav {
-  margin-top: 1rem;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
   color: $secondary;
+
+  h2 {
+    color: $accent;
+  }
 
   button {
     height: 2rem;
