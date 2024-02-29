@@ -1,22 +1,54 @@
 // Home.scss
 
-$primary: black;
-$secondary: white;
-$accent: #3f6634;
+$primary: #81c13c;
+$secondary: #98cd5f;
+$accent: #b0d983;
+$background: #fcfcfc;
+$text: #333333;
 
 nav {
-  background-color: $secondary;
+  background-color: $background;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   color: $secondary;
+  align-items: center;
+
+  img {
+    margin-left: 2.5rem;
+    width: 15em;
+  }
 
   h2 {
     color: $accent;
   }
 
+  div {
+    margin-right: 2.5rem;
+  }
+
   button {
-    height: 2rem;
+    height: 3rem;
+    width: 5rem;
+    color: $primary;
+    border: none;
+    background-color: $background;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  .vertical-line {
+    width: 2px;
+    height: 3rem;
+    background-color: $text;
+    margin: 0 auto;
+    transform: rotate(180deg);
+  }
+
+  .contact {
+    width: 15rem;
+    background-color: $primary;
+    color: $background;
   }
 }
