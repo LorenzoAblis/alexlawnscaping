@@ -120,6 +120,8 @@ nav {
   }
 
   .services-content {
+    display: flex;
+
     .card {
       width: 33%;
       padding: 2.5rem;
@@ -159,6 +161,7 @@ nav {
   }
 
   .testimonials-content {
+    display: flex;
     width: 100%;
     gap: 1rem;
 
@@ -350,6 +353,7 @@ nav {
     }
 
     .services-content {
+      display: inline;
       width: 100%;
       flex-direction: row;
 
