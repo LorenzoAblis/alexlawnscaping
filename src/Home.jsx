@@ -61,7 +61,7 @@ const Home = () => {
             round.
           </h5>
         </div>
-        <div className="services-content d-flex">
+        <div className="services-content">
           <article className="card">
             <img src={mowing} alt="" className="shadow" />
             <h3 className="fw-bold card-title">Mowing</h3>
@@ -99,7 +99,7 @@ const Home = () => {
             Voices of Satisfied Customers
           </h2>
         </div>
-        <div className="testimonials-content d-flex">
+        <div className="testimonials-content">
           <article className="card">
             <p className="testimonials-text">
               Exceptional lawn care service! My yard has never looked better.
