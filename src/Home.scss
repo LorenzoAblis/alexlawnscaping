@@ -1,7 +1,7 @@
 $primary: #81c13c;
 $secondary: #98cd5f;
 $accent: #b0d983;
-$background: #f5f5dc;
+$background: #fcfcfc;
 $text: white;
 
 main {
@@ -27,14 +27,22 @@ nav {
     margin-right: 2.5rem;
   }
 
-  button {
+  a {
+    display: flex;
     height: 3rem;
-    width: 4rem;
+    width: 7vw;
     color: $primary;
     border: none;
     background-color: $background;
+    align-items: center;
     font-weight: bold;
+    text-align: center;
     font-size: 1.25rem;
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
   }
 
   .contact {
@@ -47,7 +55,7 @@ nav {
 .slogan-section {
   img {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     object-fit: cover;
   }
 
@@ -55,24 +63,25 @@ nav {
     position: absolute;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
     font-size: 5rem;
-    top: 10rem;
+    top: 12.5rem;
     left: 7.5rem;
     color: $text;
     z-index: 1;
-    width: 45vw;
+    width: 55vw;
   }
 }
 
 .passion-section {
-  padding: 7.5rem;
+  padding: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
 
   img {
-    width: 35rem;
+    width: 35vw;
     object-fit: cover;
+    border-radius: 5%;
   }
 
   .passion-content {
@@ -86,6 +95,106 @@ nav {
     .passion-article {
       margin-left: 1rem;
     }
+  }
+}
+
+.services-section {
+  background-color: #f5f5dc;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  .services-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .services-subtitle {
+      padding: 0.5rem;
+      width: 65%;
+    }
+  }
+
+  .services-content {
+    .card {
+      width: 33%;
+      padding: 2.5rem;
+      background: #f5f5dc;
+      border: none;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-bottom: 2rem;
+      }
+
+      .card-title {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.testimonials-section {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  .testimonials-header {
+    margin-bottom: 1rem;
+
+    .testimonials-subtitle {
+      text-align: center;
+      color: $primary;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .testimonials-content {
+    width: 100%;
+    gap: 1rem;
+
+    .card {
+      justify-content: space-between;
+      border: none;
+      width: 33%;
+      padding: 1rem;
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+.location-section {
+  display: flex;
+  height: 100vh;
+  background-color: #f1f1f1;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem;
+  gap: 3rem;
+
+  iframe {
+    height: 100%;
+    border-radius: 5%;
+    width: 100%;
+  }
+
+  .location-content {
+    margin-top: 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 3rem;
+    width: 80vw;
   }
 }
 
@@ -112,12 +221,12 @@ nav {
     }
 
     .contact {
-      width: 12vw;
+      width: 100%;
       text-align: left;
     }
 
     h1 {
-      width: 20vw;
+      width: 22vw;
       text-align: left;
 
       span {
