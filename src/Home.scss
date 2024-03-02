@@ -172,6 +172,39 @@ nav {
   }
 }
 
+.about-section {
+  margin-top: 9vh;
+  margin-bottom: 9vh;
+  display: flex;
+  height: 50vh;
+  background-color: $accent;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 20%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+
+  .about-content {
+    margin-left: 3rem;
+    width: 45%;
+
+    .about-header {
+      .about-subtitle {
+        font-size: 1.25rem;
+        font-weight: 400;
+      }
+
+      .about-title {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
 .location-section {
   display: flex;
   height: 100vh;
