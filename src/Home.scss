@@ -31,7 +31,7 @@ nav {
     display: flex;
     height: 3rem;
     width: 7vw;
-    color: $primary;
+    color: black;
     border: none;
     background-color: $background;
     align-items: center;
@@ -267,6 +267,52 @@ nav {
 
       span {
         color: $primary;
+        text-shadow: 0 0 100px $primary;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    a {
+      transition: all 0.4s;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+        color: $primary;
+        text-shadow: 0 0 5rem $primary;
+      }
+    }
+  }
+
+  .passion-title {
+    transition: all 1s;
+
+    &:hover {
+      color: $primary;
+      text-shadow: 0 0 5rem $primary;
+    }
+  }
+
+  .services-section {
+    .card {
+      transition: all 1s;
+
+      &:hover {
+        width: 50%;
+      }
+    }
+  }
+
+  .about-section {
+    img {
+      transition: all 1s;
+
+      &:hover {
+        width: 30%;
+        height: 70vh;
+        box-shadow: 0 0 200px $accent;
       }
     }
   }

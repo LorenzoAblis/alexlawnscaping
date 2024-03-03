@@ -122,7 +122,7 @@ const Home = () => {
       </section>
 
       <section className="about-section" id="about-section">
-        <img src={about} alt="" className="shadow-lg" />
+        <img src={about} alt="" />
         <article className="about-content">
           <div className="about-header">
             <h4 className="about-subtitle">About Me</h4>
