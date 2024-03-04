@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./assets/logo.png";
+import logoTransparent from "./assets/logoTransparent.png";
 import lawn from "./assets/lawn.jpg";
 import passion from "./assets/passion.jpg";
 import mowing from "./assets/mowing.jpg";
@@ -10,9 +11,9 @@ import "./Home.scss";
 
 const Home = () => {
   return (
-    <main className="shadow">
+    <main>
       <nav className="d-flex justify-content-between p-3 shadow">
-        <img src={logo} alt="logo" />
+        <img src={logoTransparent} alt="logo" />
         <div className="d-flex gap-5">
           <a href="#about-section">About</a>
           <a href="#services-section">Services</a>
@@ -117,6 +118,70 @@ const Home = () => {
               Highly recommend! Their weed control is the best.
             </p>
             <h4 className="testimonials-name">- Guvienvere B</h4>
+          </article>
+          <article className="card">
+            <p className="testimonials-text">
+              I recently hired ABC Lawnscaping to take care of my lawn, and I'm
+              amazed at the difference it's made! Their professional team not
+              only delivered exceptional results but also provided valuable tips
+              to maintain the beauty of my lawn year-round. I highly recommend
+              their services!
+            </p>
+            <h4 className="testimonials-name">- Bobby G</h4>
+          </article>
+          <article className="card">
+            <p className="testimonials-text">
+              I've been using XYZ Lawnscaping for years now, and I couldn't be
+              happier with the results! Their attention to detail and commitment
+              to keeping my lawn lush and vibrant have truly transformed my
+              outdoor space.
+            </p>
+            <h4 className="testimonials-name">- Chase Bank</h4>
+          </article>
+          <article className="card">
+            <p className="testimonials-text">Their edging job was the best!</p>
+            <h4 className="testimonials-name">- Enzo Ablis</h4>
+          </article>
+          <article className="card">
+            <p className="testimonials-text">
+              Exceptional lawn care service! My yard has never looked better.
+            </p>
+            <h4 className="testimonials-name">- Joe G</h4>
+          </article>
+          <article className="card">
+            <p className="testimonials-text">
+              Top-notch service! They transformed my lawn beautifully.
+            </p>
+            <h4 className="testimonials-name">- Love Q</h4>
+          </article>
+          <article className="card">
+            <p className="testimonials-text">
+              Highly recommend! Their weed control is the best.
+            </p>
+            <h4 className="testimonials-name">- Guvienvere B</h4>
+          </article>
+          <article className="card">
+            <p className="testimonials-text">
+              I recently hired ABC Lawnscaping to take care of my lawn, and I'm
+              amazed at the difference it's made! Their professional team not
+              only delivered exceptional results but also provided valuable tips
+              to maintain the beauty of my lawn year-round. I highly recommend
+              their services!
+            </p>
+            <h4 className="testimonials-name">- Bobby G</h4>
+          </article>
+          <article className="card">
+            <p className="testimonials-text">
+              I've been using XYZ Lawnscaping for years now, and I couldn't be
+              happier with the results! Their attention to detail and commitment
+              to keeping my lawn lush and vibrant have truly transformed my
+              outdoor space.
+            </p>
+            <h4 className="testimonials-name">- Chase Bank</h4>
+          </article>
+          <article className="card">
+            <p className="testimonials-text">Their edging job was the best!</p>
+            <h4 className="testimonials-name">- Enzo Ablis</h4>
           </article>
         </div>
       </section>

@@ -9,7 +9,7 @@ main {
 }
 
 nav {
-  background-color: $background;
+  background-color: transparent;
   width: 100%;
   position: relative;
   top: 0;
@@ -36,7 +36,7 @@ nav {
     background-color: $background;
     align-items: center;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
     font-size: 1.25rem;
     text-decoration: none;
   }
@@ -149,6 +149,7 @@ nav {
   flex-direction: column;
   width: 100%;
   align-items: center;
+  overflow: hidden;
 
   .testimonials-header {
     margin-bottom: 1rem;
@@ -162,13 +163,23 @@ nav {
 
   .testimonials-content {
     display: flex;
-    width: 100%;
-    gap: 1rem;
+    gap: 2.5rem;
+    overflow: hidden;
+    animation: 20s slide infinite linear;
+
+    @keyframes slide {
+      from {
+        transform: translateX(calc(30% + 35rem));
+      }
+      to {
+        transform: translateX(calc(-30% - 35rem));
+      }
+    }
 
     .card {
       justify-content: space-between;
       border: none;
-      width: 33%;
+      width: 25rem;
       padding: 1rem;
       background-color: #f1f1f1;
     }
@@ -185,7 +196,7 @@ nav {
   justify-content: center;
 
   img {
-    width: 20%;
+    width: 25%;
     height: 60vh;
     object-fit: cover;
     border-radius: 5%;
@@ -245,7 +256,7 @@ nav {
     margin-left: 7vw;
 
     .question {
-      width: 20vw;
+      width: 30vw;
 
       hr {
         margin-top: auto;
@@ -262,7 +273,7 @@ nav {
     }
 
     h1 {
-      width: 22.1vw;
+      width: 29vw;
       text-align: left;
 
       span {
@@ -287,7 +298,7 @@ nav {
   }
 
   .passion-title {
-    transition: all 1s;
+    transition: all 0.5s;
 
     &:hover {
       color: $primary;
@@ -310,7 +321,7 @@ nav {
       transition: all 1s;
 
       &:hover {
-        width: 30%;
+        width: 35%;
         height: 70vh;
         box-shadow: 0 0 200px $accent;
       }
@@ -495,19 +506,19 @@ nav {
   .footer {
     .footer-content {
       .question {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%;
 
         hr {
-          width: 100%; /* Adjust width for smaller screens */
+          width: 100%;
         }
       }
 
       .contact {
-        width: 100%; /* Adjust width for smaller screens */
+        width: 100%;
       }
 
       h1 {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%;
       }
     }
   }
