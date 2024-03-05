@@ -53,21 +53,81 @@ nav {
 }
 
 .slogan-section {
-  img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
+  margin-top: 5rem;
+  display: flex;
+  gap: 3.5rem;
+  justify-content: center;
+  align-items: center;
+
+  .slogan-text {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    div {
+      margin-top: 1.5rem;
+      a {
+        text-decoration: none;
+        padding: 1rem;
+        color: black;
+        font-size: 1.15rem;
+        font-weight: 500;
+        border: 0.2rem solid $accent;
+      }
+    }
   }
 
-  h1 {
-    position: absolute;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
-    font-size: 5rem;
-    top: 12.5rem;
-    left: 7.5rem;
-    color: $text;
-    z-index: 1;
-    width: 55vw;
+  img {
+    width: 40vw;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+}
+
+.benefits-section {
+  margin-top: 5rem;
+  display: flex;
+  gap: 3.5rem;
+  justify-content: center;
+  align-items: center;
+
+  .benefits-text {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .benefits-header {
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .benefits-cards {
+      display: flex;
+
+      .benefits-card {
+        h3 {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 40vw;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 5%;
   }
 }
 
@@ -293,6 +353,18 @@ nav {
         transform: translateY(-0.5rem);
         color: $primary;
         text-shadow: 0 0 5rem $primary;
+      }
+    }
+  }
+
+  .slogan-section {
+    a {
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: $accent;
+        box-shadow: 0 0 10rem $accent;
+        color: white;
       }
     }
   }

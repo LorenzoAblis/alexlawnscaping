@@ -2,11 +2,13 @@ import React from "react";
 import logo from "./assets/logo.png";
 import logoTransparent from "./assets/logoTransparent.png";
 import lawn from "./assets/lawn.jpg";
+import benefits from "./assets/benefits.jpg";
 import passion from "./assets/passion.jpg";
 import mowing from "./assets/mowing.jpg";
 import edging from "./assets/edging.png";
 import fertilization from "./assets/fertilization.jpg";
-import about from "./assets/about.jpg";
+import alex from "./assets/alex.jpg";
+import fiveStars from "./assets/fiveStars.png";
 import "./Home.scss";
 
 const Home = () => {
@@ -23,31 +25,76 @@ const Home = () => {
           </button>
         </div>
       </nav>
+
       <section className="slogan-section">
-        <img src={lawn} alt="lawn" />
-        <h1>Where Lawns Thrive, We Arrive.</h1>
+        <div className="slogan-text">
+          <h1>Transforming lawns into stunning outdoor spaces</h1>
+          <p>
+            Welcome to Alex Lawnscaping, where I specialize in creating
+            beautiful and functional outdoor environments. With my expertise and
+            top-notch services, I'll turn your lawn into a masterpiece.
+          </p>
+          <div>
+            <a href="#passion-section">Learn More</a>
+          </div>
+        </div>
+        <img src={lawn} alt="lawn" className="shadow-lg" />
+      </section>
+
+      <section className="benefits-section">
+        <img src={benefits} alt="" className="shadow" />
+        <div className="benefits-text">
+          <section className="benefits-header">
+            <h2>
+              Enhance Your Outdoor Space with Professional Lawnscaping Services
+            </h2>
+            <p>
+              Transform your lawn into a beautiful and inviting oasis with my
+              professional lawnscaping services. I will ensure that your outdoor
+              space is well-maintained, vibrant, and visually appealing.
+            </p>
+          </section>
+          <section className="benefits-cards">
+            <div className="benefits-card">
+              <h3>Increase Curb Appeal</h3>
+              <p>
+                My lawnscaping services will significantly enhance the curb
+                appeal of your property.
+              </p>
+            </div>
+            <div className="benefits-card">
+              <h3>Boost Property Value</h3>
+              <p>
+                Investing in professional lawnscaping can increase the value of
+                your property.
+              </p>
+            </div>
+          </section>
+        </div>
       </section>
 
       <section className="passion-section">
         <img src={passion} alt="" className="shadow-lg" />
 
-        <section className="passion-content d-flex">
+        <section className="passion-content d-flex" id="passion-section">
           <div className="vertical" />
           <article className="passion-article">
             <h1 className="fw-bold passion-title">Mowing with Passion</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              culpa distinctio, quisquam saepe exercitationem facere eligendi
-              natus minima expedita commodi ut tempora sed repellendus atque
-              eveniet fugiat! Obcaecati maiores natus laborum itaque, ducimus
-              veritatis in suscipit deleniti eveniet explicabo quaerat voluptas
-              earum adipisci illum fugit dignissimos neque ab sunt! Minima sint
-              adipisci exercitationem voluptas eum impedit iure, beatae debitis
-              et? Eum expedita dolorum corrupti reprehenderit. Natus libero
-              officia rerum perspiciatis sapiente incidunt nam iste fugit
-              consectetur id! Placeat architecto repellendus nobis perferendis.
-              Vero, obcaecati dolores ea quidem voluptatum a nisi sequi culpa
-              placeat in soluta aliquam, impedit deleniti nesciunt quo!
+              Mowing lawns isn't just a job for me — it's my passion. Every
+              morning, as the sun rises, I step onto the lush green canvas of
+              your lawn with a sense of purpose and excitement. Each blade of
+              grass I trim isn't just a chore; it's an opportunity to create
+              something beautiful.
+              <br />
+              <br />
+              My dedication to mowing isn't just about making your lawn look
+              neat and tidy; it's about transforming it into a work of art, a
+              living masterpiece that reflects the care and attention to detail.
+              <br />
+              <br />
+              So let's embark on this journey together, turning your lawn into a
+              breathtaking oasis of greenery and tranquility!
             </p>
           </article>
         </section>
@@ -55,7 +102,7 @@ const Home = () => {
 
       <section className="services-section" id="services-section">
         <div className="services-header">
-          <h1 className="fw-bold services-title">Our Services</h1>
+          <h1 className="fw-bold services-title">My Services</h1>
           <h5 className="services-subtitle">
             We provide a comprehensive range of services in the Lawn Care
             industry, ensuring your lawn stays healthy and beautiful all year
@@ -187,7 +234,7 @@ const Home = () => {
       </section>
 
       <section className="about-section" id="about-section">
-        <img src={about} alt="" />
+        <img src={alex} alt="" />
         <article className="about-content">
           <div className="about-header">
             <h4 className="about-subtitle">About Me</h4>
