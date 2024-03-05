@@ -1,31 +1,18 @@
 import React from "react";
-import logo from "./assets/logo.png";
-import logoTransparent from "./assets/logoTransparent.png";
-import lawn from "./assets/lawn.jpg";
-import benefits from "./assets/benefits.jpg";
-import passion from "./assets/passion.jpg";
-import mowing from "./assets/mowing.jpg";
-import edging from "./assets/edging.png";
-import fertilization from "./assets/fertilization.jpg";
-import alex from "./assets/alex.jpg";
-import fiveStars from "./assets/fiveStars.png";
-import "./Home.scss";
+import logo from "../assets/logo.png";
+import lawn from "../assets/lawn.jpg";
+import benefits from "../assets/benefits.jpg";
+import passion from "../assets/passion.jpg";
+import mowing from "../assets/mowing.jpg";
+import edging from "../assets/edging.png";
+import fertilization from "../assets/fertilization.jpg";
+import alex from "../assets/alex.jpg";
+import fiveStars from "../assets/fiveStars.png";
+import "../styles/Home.scss";
 
 const Home = () => {
   return (
     <main>
-      <nav className="d-flex justify-content-between p-3 shadow">
-        <img src={logoTransparent} alt="logo" />
-        <div className="d-flex gap-5">
-          <a href="#about-section">About</a>
-          <a href="#services-section">Services</a>
-          <a href="#location-section">Location</a>
-          <button className="contact">
-            <i className="bi bi-telephone-fill mr-3"></i> 312-444-1423
-          </button>
-        </div>
-      </nav>
-
       <section className="slogan-section">
         <div className="slogan-text">
           <h1>Transforming lawns into stunning outdoor spaces</h1>
@@ -104,7 +91,7 @@ const Home = () => {
         <div className="services-header">
           <h1 className="fw-bold services-title">My Services</h1>
           <h5 className="services-subtitle">
-            We provide a comprehensive range of services in the Lawn Care
+            I provide a comprehensive range of services in the lawnscaping
             industry, ensuring your lawn stays healthy and beautiful all year
             round.
           </h5>
@@ -114,25 +101,25 @@ const Home = () => {
             <img src={mowing} alt="" className="shadow" />
             <h3 className="fw-bold card-title">Mowing</h3>
             <p className="card-text">
-              Our mowing service ensures your lawn can breathe, promoting root
-              growth and improving water and nutrient absorption. Let us help
-              your lawn thrive with our profession
+              My mowing service ensures your lawn can breathe, promoting root
+              growth and improving water and nutrient absorption. Let me help
+              your lawn thrive with my profession
             </p>
           </article>
           <article className="card">
             <img src={edging} alt="" className="shadow" />
             <h3 className="fw-bold card-title">Edging</h3>
             <p className="card-text">
-              Edging gives your lawn a clean, manicured look. Our experts create
-              clear lines between your lawn and adjacent areas, enhancing the
-              overall aesthetic of your outdoor space.
+              Edging gives your lawn a clean, manicured look. My expertise
+              creates clear lines between your lawn and adjacent areas,
+              enhancing the overall aesthetic of your outdoor space.
             </p>
           </article>
           <article className="card">
             <img src={fertilization} alt="" className="shadow" />
             <h3 className="fw-bold card-title">Fertilization</h3>
             <p className="card-text">
-              Fertilizing is key to a lush, green lawn. We provide a balanced
+              Fertilizing is key to a lush, green lawn. I provide a balanced
               blend of nutrients tailored to your lawn's specific needs,
               promoting healthy growth and resilience.
             </p>
@@ -168,7 +155,7 @@ const Home = () => {
           </article>
           <article className="card">
             <p className="testimonials-text">
-              I recently hired ABC Lawnscaping to take care of my lawn, and I'm
+              I recently hired Alex Lawnscaping to take care of my lawn, and I'm
               amazed at the difference it's made! Their professional team not
               only delivered exceptional results but also provided valuable tips
               to maintain the beauty of my lawn year-round. I highly recommend
@@ -178,7 +165,7 @@ const Home = () => {
           </article>
           <article className="card">
             <p className="testimonials-text">
-              I've been using XYZ Lawnscaping for years now, and I couldn't be
+              I've been using Alex Lawnscaping for years now, and I couldn't be
               happier with the results! Their attention to detail and commitment
               to keeping my lawn lush and vibrant have truly transformed my
               outdoor space.
@@ -209,7 +196,7 @@ const Home = () => {
           </article>
           <article className="card">
             <p className="testimonials-text">
-              I recently hired ABC Lawnscaping to take care of my lawn, and I'm
+              I recently hired Alex Lawnscaping to take care of my lawn, and I'm
               amazed at the difference it's made! Their professional team not
               only delivered exceptional results but also provided valuable tips
               to maintain the beauty of my lawn year-round. I highly recommend
@@ -219,7 +206,7 @@ const Home = () => {
           </article>
           <article className="card">
             <p className="testimonials-text">
-              I've been using XYZ Lawnscaping for years now, and I couldn't be
+              I've been using Alex Lawnscaping for years now, and I couldn't be
               happier with the results! Their attention to detail and commitment
               to keeping my lawn lush and vibrant have truly transformed my
               outdoor space.
@@ -265,34 +252,15 @@ const Home = () => {
           <div>
             <h1 className="fw-bold">Find us Here</h1>
             <p className="location-text">
-              Our Lawn Care company is conveniently located at your service. You
-              can find us on the map provided below. We are your local experts
+              My lawnscaping company is conveniently located at your service.
+              You can find me on the map provided below. I am your local expert
               in Aeration, Edging, Fertilizing, Mowing, Trimming, and Weed
-              Control. Don't hesitate to visit us for all your lawn care needs.
+              Control. Don't hesitate to visit me for all your lawn care needs.
             </p>
           </div>
           <div></div>
         </div>
       </section>
-
-      <footer className="footer bg-black p-3">
-        <div className="footer-content">
-          <div className="question">
-            <h1 className="fw-bold">
-              Need your <span>lawn</span> mowed?
-            </h1>
-            <hr />
-          </div>
-          <section className="contact">
-            <div className="phone pb-1">
-              <i className="bi bi-telephone-fill"></i> 312-444-1423
-            </div>
-            <div className="email">
-              <i className="bi bi-envelope-fill"></i> info@yourdomain.com
-            </div>
-          </section>
-        </div>
-      </footer>
     </main>
   );
 };

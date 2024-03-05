@@ -1,0 +1,45 @@
+@import "./main.scss";
+
+nav {
+  background-color: transparent;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: $secondary;
+  box-shadow: 0 -5px 100px rgba(0, 0, 0, 0.2);
+  align-items: center;
+
+  img {
+    margin-left: 2.5rem;
+    width: 15em;
+  }
+
+  div {
+    margin-right: 2.5rem;
+  }
+
+  a {
+    display: flex;
+    height: 3rem;
+    width: 7vw;
+    color: black;
+    border: none;
+    background-color: $background;
+    align-items: center;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+  }
+
+  .contact {
+    width: 14rem;
+    background-color: $primary;
+    color: $text;
+  }
+}

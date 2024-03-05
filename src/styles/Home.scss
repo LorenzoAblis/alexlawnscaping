@@ -1,55 +1,7 @@
-$primary: #81c13c;
-$secondary: #98cd5f;
-$accent: #b0d983;
-$background: #ffffff;
-$text: white;
+@import "./main.scss";
 
 main {
   background-color: $background;
-}
-
-nav {
-  background-color: transparent;
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  color: $secondary;
-  box-shadow: 0 -5px 100px rgba(0, 0, 0, 0.2);
-  align-items: center;
-
-  img {
-    margin-left: 2.5rem;
-    width: 15em;
-  }
-
-  div {
-    margin-right: 2.5rem;
-  }
-
-  a {
-    display: flex;
-    height: 3rem;
-    width: 7vw;
-    color: black;
-    border: none;
-    background-color: $background;
-    align-items: center;
-    font-weight: bold;
-    text-align: right;
-    font-size: 1.25rem;
-    text-decoration: none;
-  }
-
-  button {
-    border: none;
-  }
-
-  .contact {
-    width: 14rem;
-    background-color: $primary;
-    color: $text;
-  }
 }
 
 .slogan-section {
@@ -132,20 +84,22 @@ nav {
 }
 
 .passion-section {
-  padding: 6rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
-  align-items: center;
+  gap: 3.5rem;
   justify-content: center;
-  gap: 4rem;
+  align-items: center;
 
   img {
-    width: 35vw;
+    width: 40vw;
+    height: 70vh;
     object-fit: cover;
     border-radius: 5%;
   }
 
   .passion-content {
-    width: 40vw;
+    width: 45vw;
 
     .vertical {
       border-left: 6px solid $primary;
@@ -154,6 +108,10 @@ nav {
 
     .passion-article {
       margin-left: 1rem;
+
+      h1 {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
@@ -305,45 +263,6 @@ nav {
   }
 }
 
-.footer {
-  position: relative;
-  width: 100%;
-  height: 30vh;
-  color: #ffffff;
-  text-align: center;
-
-  .footer-content {
-    margin-left: 7vw;
-
-    .question {
-      width: 30vw;
-
-      hr {
-        margin-top: auto;
-        border: none;
-        border-top: 0.5rem solid $primary;
-        opacity: 1;
-        width: 100%;
-      }
-    }
-
-    .contact {
-      width: 100%;
-      text-align: left;
-    }
-
-    h1 {
-      width: 29vw;
-      text-align: left;
-
-      span {
-        color: $primary;
-        text-shadow: 0 0 100px $primary;
-      }
-    }
-  }
-}
-
 @media only screen and (min-width: 768px) {
   nav {
     a {
@@ -398,6 +317,10 @@ nav {
         box-shadow: 0 0 200px $accent;
       }
     }
+  }
+
+  .testimonials-content:hover {
+    animation-play-state: paused;
   }
 }
 
