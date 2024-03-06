@@ -1,4 +1,4 @@
-@import "./main.scss";
+@import "../main.scss";
 
 .footer {
   position: relative;
@@ -34,6 +34,28 @@
       span {
         color: $primary;
         text-shadow: 0 0 100px $primary;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    .footer-content {
+      .question {
+        width: 90%;
+
+        hr {
+          width: 100%;
+        }
+      }
+
+      .contact {
+        width: 100%;
+      }
+
+      h1 {
+        width: 90%;
       }
     }
   }

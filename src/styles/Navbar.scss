@@ -1,4 +1,4 @@
-@import "./main.scss";
+@import "../main.scss";
 
 nav {
   background-color: transparent;
@@ -41,5 +41,50 @@ nav {
     width: 14rem;
     background-color: $primary;
     color: $text;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    a {
+      transition: all 0.4s;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+        color: $primary;
+        text-shadow: 0 0 5rem $primary;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: $background;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: $secondary;
+    box-shadow: none;
+    align-items: center;
+
+    img {
+      margin-left: 1.5rem;
+      width: 10em;
+    }
+
+    div {
+      margin-right: 1.5rem;
+    }
+
+    a {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+    border: none;
   }
 }
