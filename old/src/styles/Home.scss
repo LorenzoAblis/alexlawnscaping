@@ -1,0 +1,12 @@
+@import "../main.scss";
+
+main {
+  background-color: $background;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    background-color: $background;
+    margin: -1rem;
+  }
+}

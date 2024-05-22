@@ -1,0 +1,78 @@
+@import "../main.scss";
+
+.about-section {
+  margin-top: 9vh;
+  margin-bottom: 9vh;
+  display: flex;
+  height: 50vh;
+  background-color: $accent;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 25%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+
+  .about-content {
+    margin-left: 3rem;
+    width: 45%;
+
+    .about-header {
+      .about-subtitle {
+        font-size: 1.25rem;
+        font-weight: 400;
+      }
+
+      .about-title {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-section {
+    img {
+      transition: all 1s;
+
+      &:hover {
+        width: 35%;
+        height: 70vh;
+        box-shadow: 0 0 200px $accent;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-section {
+    display: flex;
+    height: 175vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: $accent;
+    padding: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    img {
+      margin-top: 6rem;
+      width: 100%;
+    }
+
+    .about-content {
+      margin-top: 2rem;
+      margin-bottom: 6rem;
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+
+      .about-header {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

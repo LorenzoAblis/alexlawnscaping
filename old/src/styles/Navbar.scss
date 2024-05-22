@@ -1,0 +1,117 @@
+@import "../main.scss";
+
+nav {
+  background-color: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: $secondary;
+  box-shadow: 0 -5px 50px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  transition: all 1s;
+  z-index: 1000;
+
+  img {
+    margin-left: 2.5rem;
+    width: 15em;
+  }
+
+  div {
+    margin-right: 2.5rem;
+  }
+
+  a {
+    display: flex;
+    height: 3rem;
+    width: 7vw;
+    color: black;
+    border: none;
+    background-color: $background;
+    align-items: center;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+  }
+
+  .contact {
+    width: 14rem;
+    background-color: $primary;
+    color: $text;
+  }
+}
+
+.sticky {
+  height: 8vh;
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  position: fixed;
+  animation-duration: 0.5s;
+  animation-name: fadeInDown;
+
+  img {
+    width: 10em;
+  }
+
+  a {
+    height: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    a {
+      transition: all 0.4s;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+        color: $primary;
+        text-shadow: 0 0 5rem $primary;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: $background;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: $secondary;
+    align-items: center;
+
+    img {
+      margin-left: 1.5rem;
+      width: 10em;
+    }
+
+    div {
+      margin-right: 1.5rem;
+    }
+
+    a {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+    border: none;
+  }
+}

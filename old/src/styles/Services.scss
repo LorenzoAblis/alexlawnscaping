@@ -1,0 +1,91 @@
+@import "../main.scss";
+
+.services-section {
+  background-color: #f5f5dc;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  .services-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .services-subtitle {
+      padding: 0.5rem;
+      width: 65%;
+    }
+  }
+
+  .services-content {
+    display: flex;
+
+    .card {
+      width: 33%;
+      padding: 2.5rem;
+      background: #f5f5dc;
+      border: none;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-bottom: 2rem;
+      }
+
+      .card-title {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .services-section {
+    .card {
+      transition: all 1s;
+
+      &:hover {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services-section {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .services-header {
+      width: 100%;
+
+      .services-subtitle {
+        width: 100%;
+      }
+    }
+
+    .services-content {
+      display: inline;
+      width: 100%;
+      flex-direction: row;
+
+      .card {
+        width: 100%;
+        padding: 1.51rem;
+
+        .card-title {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
