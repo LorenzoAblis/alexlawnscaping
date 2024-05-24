@@ -6,19 +6,23 @@ import Testimonials from "./components/Testimonials";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Location from "./components/Location";
+import Navbar from "./components/Navbar";
 // import "../styles/Home.scss";
 
 export default function Home() {
   return (
-    <main>
-      <Slogan />
-      {/* <Benefits />
+    <>
+      <Navbar></Navbar>
+      <main>
+        <Slogan />
+        {/* <Benefits />
       <Passion />
       <Services />
       <Testimonials />
       <About /> */}
-      {/* <Contact /> */}
-      {/* <Location /> */}
-    </main>
+        {/* <Contact /> */}
+        {/* <Location /> */}
+      </main>
+    </>
   );
 }

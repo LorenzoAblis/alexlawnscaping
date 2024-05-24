@@ -1,32 +1,52 @@
-import { useEffect, useState } from "react";
+"use client";
+
 import "../styles/Navbar.scss";
-import logoTransparent from "../assets/logoTransparent.png";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
+  const routes = [
+    { name: "Services", route: "services" },
+    { name: "Testimonials", route: "testimonials" },
+    { name: "About", route: "about" },
+    { name: "Contact", route: "contact" },
+  ];
+
   const [scroll, setScroll] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       setScroll(window.scrollY > 100);
-    });
-  });
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
-      <nav
-        className={`d-flex justify-content-between p-3 ${
-          scroll ? "sticky" : ""
-        }`}
-      >
-        <img src={logoTransparent} alt="logo" />
-        <div className="d-flex gap-5">
-          <a href="#about-section">About</a>
-          <a href="#services-section">Services</a>
-          <a href="#contact-section">Contact</a>
+    <nav className={`${scroll ? "sticky" : ""}`}>
+      <Image
+        src="/logoTransparent.png"
+        alt="logo"
+        className="next-img"
+        width={500}
+        height={100}
+      />
+      <ul className="nav-links">
+        {routes.map((route) => (
+          <li key={route.route}>
+            <a href={`#${route.route}`}>{route.name}</a>
+          </li>
+        ))}
+        {/* <li>
           <button className="contact">
             <i className="bi bi-telephone-fill mr-3"></i> 312-444-1423
           </button>
-        </div>
-      </nav>
-    </header>
+        </li> */}
+      </ul>
+    </nav>
   );
 };
 

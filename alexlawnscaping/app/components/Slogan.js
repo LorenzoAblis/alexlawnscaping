@@ -19,15 +19,6 @@ const Slogan = () => {
           <a href="#passion-section">Learn More</a>
         </div>
       </div>
-      {/* <Image
-        src="/logoTransparent.png"
-        alt="lawn"
-        width={500}
-        height={100}
-        className="next-img"
-      /> */}
-
-      <div className="nav-container">wdwdwdwdwwdwd</div>
     </section>
   );
 };
