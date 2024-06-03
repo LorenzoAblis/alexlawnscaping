@@ -15,11 +15,14 @@ export default function Home() {
       <Navbar></Navbar>
       <main>
         <Slogan />
-        {/* <Benefits />
-      <Passion />
-      <Services />
-      <Testimonials />
-      <About /> */}
+        <Benefits />
+        <Passion />
+        <Services />
+        {/* 
+        
+        
+        <Testimonials />
+        <About /> */}
         {/* <Contact /> */}
         {/* <Location /> */}
       </main>

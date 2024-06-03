@@ -5,7 +5,13 @@ import "../styles/Slogan.scss";
 const Slogan = () => {
   return (
     <section className="slogan-section">
-      <Image src="/lawn.jpg" alt="lawn" fill className="next-img" />
+      <Image
+        src="/lawn.jpg"
+        alt="lawn"
+        fill
+        objectFit="cover"
+        className="next-img"
+      />
       <div className="img-overlay"></div>
 
       <div className="slogan-text">
