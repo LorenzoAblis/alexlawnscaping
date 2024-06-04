@@ -1,0 +1,56 @@
+@import "../main.scss";
+
+nav {
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: $secondary;
+  box-shadow: 0 -5px 50px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 1s;
+  z-index: 1000;
+
+  ul {
+    display: none;
+  }
+
+  i {
+    display: none;
+  }
+
+  .next-img {
+    margin-top: 1.5rem;
+    object-fit: contain;
+    height: 50%;
+    width: 20vw;
+    filter: drop-shadow(0 0 1rem rgba($accent, 0.35));
+    margin-left: 10vw;
+  }
+}
+
+.sticky {
+  position: fixed;
+  transition: all 1s;
+  box-shadow: 0 0 1rem rgba(black, 0.5);
+  display: flex;
+
+  background-color: $primary;
+
+  i {
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .next-img {
+    transition: all 1s;
+    height: 50%;
+    width: 15vw;
+    margin: 0.5rem auto;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../main.scss";
+
+.footer {
+  position: relative;
+  padding-top: 0.1rem;
+  background-color: black;
+  width: 100%;
+  height: 30vh;
+  color: #ffffff;
+  text-align: center;
+
+  .footer-content {
+    margin-left: 7vw;
+
+    .question {
+      width: 30vw;
+      width: 90%;
+
+      hr {
+        margin-top: auto;
+        border: none;
+        border-top: 0.5rem solid $primary;
+        opacity: 1;
+        width: 100%;
+      }
+    }
+
+    .contact {
+      width: 100%;
+      text-align: left;
+    }
+
+    h1 {
+      width: 29vw;
+      width: 90%;
+      text-align: left;
+
+      span {
+        color: $primary;
+        text-shadow: 0 0 100px $primary;
+      }
+    }
+  }
+}

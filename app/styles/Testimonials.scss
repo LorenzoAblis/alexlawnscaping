@@ -1,0 +1,58 @@
+@import "../main.scss";
+
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5rem;
+  align-items: center;
+  overflow: hidden;
+
+  .testimonials-header {
+    margin-bottom: 1rem;
+
+    h4 {
+      font-size: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+
+    .testimonials-subtitle {
+      text-align: center;
+      color: $primary;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .testimonials-content {
+    display: flex;
+    gap: 2.5rem;
+    overflow: hidden;
+    animation: 20s slide infinite linear;
+
+    @keyframes slide {
+      from {
+        transform: translateX(calc(30% + 35rem));
+      }
+      to {
+        transform: translateX(calc(-30% - 35rem));
+      }
+    }
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  .card {
+    justify-content: space-between;
+    border: none;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 10%;
+    background-color: #f1f1f1;
+  }
+}
