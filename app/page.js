@@ -7,7 +7,7 @@ import Testimonials from "./components/Testimonials";
 import Feedback from "./components/Feedback";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Location from "./components/Location";
+// import Location from "./components/Location";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -18,7 +18,6 @@ export default function Home() {
         position="top-right"
         reverseOrder={false}
         toastOptions={{
-          // Define default options
           className: "",
           duration: 10000,
           style: {
@@ -26,7 +25,6 @@ export default function Home() {
             color: "#fff",
           },
 
-          // Default options for specific types
           success: {
             duration: 10000,
             theme: {
@@ -42,12 +40,11 @@ export default function Home() {
         {/* <Benefits /> */}
         {/* <Passion /> */}
         <Services />
-
         <Testimonials />
         <Feedback />
         <About />
         <Contact />
-        <Location />
+        {/* <Location /> */}
       </main>
       <Footer />
     </>

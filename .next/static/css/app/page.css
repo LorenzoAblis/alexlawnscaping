@@ -45,6 +45,13 @@ main {
   font-weight: 600;
   border-radius: 2rem;
 }
+
+@media (min-width: 768px) {
+  .feedback-section {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+}
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/Navbar.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -73,6 +80,9 @@ nav ul {
 }
 nav button,
 nav i {
+  display: none;
+}
+nav .link-container {
   display: none;
 }
 nav .next-img {
@@ -156,6 +166,44 @@ aside i {
   opacity: 0;
   z-index: -5000;
 }
+
+@media (min-width: 768px) {
+  nav .next-img {
+    width: 8vw;
+    margin-top: 2.5rem;
+    margin-left: 5vw;
+  }
+  nav a {
+    display: none;
+  }
+  .sticky button {
+    display: none;
+  }
+  .sticky .next-img {
+    margin: 1rem 4rem;
+    width: 5vw;
+  }
+  .sticky .link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-right: 2rem;
+  }
+  .sticky .link-container a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1.35vw;
+    font-weight: 500;
+    align-items: center;
+  }
+  .sticky .link-container a:hover {
+    color: #b0d983;
+  }
+  .sticky a {
+    display: none;
+  }
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/Testimonials.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -209,6 +257,12 @@ main {
   border-radius: 2rem;
   background-color: #f1f1f1;
   scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  .testimonials-section .card {
+    width: 30vw;
+  }
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/Slogan.scss ***!
@@ -266,6 +320,23 @@ main {
   font-weight: 500;
   border: 0.2rem solid #b0d983;
 }
+
+@media (min-width: 768px) {
+  .slogan-section {
+    margin-left: 2.5vw;
+    margin-top: 5vh;
+  }
+  .slogan-section .slogan-text {
+    width: 60vw;
+    margin-bottom: 3rem;
+  }
+  .slogan-section .slogan-text h1 {
+    font-size: 3rem;
+  }
+  .slogan-section .slogan-text p {
+    font-size: 1.25rem;
+  }
+}
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/Services.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -280,9 +351,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
 }
@@ -330,6 +398,50 @@ main {
   font-size: 1.5rem;
   color: #b0d983;
 }
+
+@media (min-width: 768px) {
+  .services-section .services-header {
+    width: 75%;
+  }
+  .services-section .services-header .services-subtitle {
+    letter-spacing: initial;
+    font-size: 1.35rem;
+  }
+  .services-section .services-content {
+    margin-top: 2rem;
+  }
+  .services-section .services-content .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 3rem;
+    grid-gap: 3rem;
+  }
+  .services-section .services-content .card:nth-child(odd) img {
+    grid-column: 1/2;
+  }
+  .services-section .services-content .card:nth-child(even) img {
+    grid-column: 2/3;
+  }
+  .services-section .services-content .card img {
+    grid-row: 1/span 2;
+    width: 90%;
+  }
+  .services-section .services-content .card .card-title,
+  .services-section .services-content .card p {
+    text-align: left;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+  .services-section .services-content .card .card-title {
+    font-size: 1.75rem;
+  }
+  .services-section .services-content .card p {
+    margin: 0;
+    margin-top: -2rem;
+    font-size: 1.15rem;
+  }
+}
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/About.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -375,6 +487,34 @@ main {
   width: 90%;
   margin: auto;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    margin-top: 10rem;
+    padding: 0 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 90vh;
+  }
+  .about-section .next-img {
+    width: 90%;
+    height: 70vh;
+    grid-column: 1/2;
+    grid-row: 1/span 2;
+    margin: 0;
+  }
+  .about-section .about-content {
+    margin: 0;
+    margin-top: 6rem;
+  }
+  .about-section .about-content .about-header .about-title {
+    font-size: 2.5rem;
+  }
+  .about-section .about-content .about-text {
+    font-size: 1.15rem;
+  }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/Contact.scss ***!
@@ -432,49 +572,15 @@ main {
 .contact-section .contact-cards .contact-card p {
   font-size: 1.25rem;
 }
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/Location.scss ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-body,
-main {
-  padding: 0;
-  margin: 0;
-}
 
-.location-section {
-  display: flex;
-  height: 80vh;
-  background-color: #f1f1f1;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-.location-section iframe {
-  height: 100%;
-  border-radius: 5%;
-  width: 100%;
-  border: none;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-}
-.location-section .location-content {
-  margin-top: 1rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 3rem;
-  width: 80vw;
-  text-align: center;
-  width: 100%;
-  margin-left: 0;
-}
-.location-section .location-content .location-text {
-  margin-top: 1.5rem;
+@media (min-width: 768px) {
+  .contact-section .contact-cards {
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+  .contact-section .contact-cards .contact-card {
+    width: 40vw;
+  }
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/Footer.scss ***!
@@ -512,7 +618,7 @@ main {
 .footer .footer-content .contact {
   width: 100%;
   text-align: left;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .footer .footer-content h1 {
   width: 29vw;
@@ -522,4 +628,10 @@ main {
 .footer .footer-content h1 span {
   color: #81c13c;
   text-shadow: 0 0 100px #81c13c;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-content .question {
+    width: 40%;
+  }
 }

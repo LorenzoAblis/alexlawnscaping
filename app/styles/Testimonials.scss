@@ -53,3 +53,11 @@
     scroll-snap-align: start;
   }
 }
+
+@media (min-width: 768px) {
+  .testimonials-section {
+    .card {
+      width: 30vw;
+    }
+  }
+}

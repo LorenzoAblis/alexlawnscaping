@@ -54,3 +54,16 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .contact-section {
+    .contact-cards {
+      flex-direction: row;
+      margin-top: 1rem;
+
+      .contact-card {
+        width: 40vw;
+      }
+    }
+  }
+}

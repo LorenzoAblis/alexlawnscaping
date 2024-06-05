@@ -6,9 +6,6 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 
   .services-header {
@@ -58,6 +55,61 @@
         margin-bottom: 0.5rem;
         font-size: 1.5rem;
         color: $accent;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services-section {
+    .services-header {
+      width: 75%;
+
+      .services-subtitle {
+        letter-spacing: initial;
+        font-size: 1.35rem;
+      }
+    }
+
+    .services-content {
+      margin-top: 2rem;
+
+      .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 3rem;
+        grid-gap: 3rem;
+
+        &:nth-child(odd) img {
+          grid-column: 1 / 2;
+        }
+
+        &:nth-child(even) img {
+          grid-column: 2 / 3;
+        }
+
+        img {
+          grid-row: 1 / span 2;
+          width: 90%;
+        }
+
+        .card-title,
+        p {
+          text-align: left;
+          margin-top: 2.5rem;
+          width: 100%;
+        }
+
+        .card-title {
+          font-size: 1.75rem;
+        }
+
+        p {
+          margin: 0;
+          margin-top: -2rem;
+          font-size: 1.15rem;
+        }
       }
     }
   }

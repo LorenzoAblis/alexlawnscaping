@@ -23,6 +23,10 @@ nav {
     display: none;
   }
 
+  .link-container {
+    display: none;
+  }
+
   .next-img {
     margin-top: 1.5rem;
     object-fit: contain;
@@ -113,4 +117,53 @@ aside {
 .hide-sidebar {
   opacity: 0;
   z-index: -5000;
+}
+
+@media (min-width: 768px) {
+  nav {
+    .next-img {
+      width: 8vw;
+      margin-top: 2.5rem;
+      margin-left: 5vw;
+    }
+
+    a {
+      display: none;
+    }
+  }
+
+  .sticky {
+    button {
+      display: none;
+    }
+
+    .next-img {
+      margin: 1rem 4rem;
+      width: 5vw;
+    }
+
+    .link-container {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      margin-right: 2rem;
+
+      a {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        font-size: 1.35vw;
+        font-weight: 500;
+        align-items: center;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+
+    a {
+      display: none;
+    }
+  }
 }

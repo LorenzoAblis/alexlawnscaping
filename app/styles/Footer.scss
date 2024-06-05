@@ -29,7 +29,7 @@
     .contact {
       width: 100%;
       text-align: left;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     h1 {
@@ -40,6 +40,16 @@
       span {
         color: $primary;
         text-shadow: 0 0 100px $primary;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    .footer-content {
+      .question {
+        width: 40%;
       }
     }
   }

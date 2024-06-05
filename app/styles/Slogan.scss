@@ -55,3 +55,23 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .slogan-section {
+    margin-left: 2.5vw;
+    margin-top: 5vh;
+
+    .slogan-text {
+      width: 60vw;
+      margin-bottom: 3rem;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

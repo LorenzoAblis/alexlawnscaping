@@ -41,6 +41,17 @@ const Navbar = () => {
           height={100}
         />
 
+        <div className="link-container">
+          {routes.map((route, index) => (
+            <a href={`#${route.route}`} key={index}>
+              {route.name}
+            </a>
+          ))}
+          <a href="tel:224-522-4243">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+        </div>
+
         <a href="tel:224-522-4243">
           <i class="bi bi-telephone-fill"></i>
         </a>
