@@ -15,20 +15,15 @@ const About = () => {
       />
       <article className="about-content">
         <div className="about-header">
-          <h4 className="about-subtitle">About Me</h4>
-          <h1 className="about-title">Alex Madalinski</h1>
+          <h1 className="about-title">About The Team!</h1>
         </div>
         <div className="about-text">
-          My name is Alex, and I'm dedicated to providing high-quality lawn care
-          services to homeowners and businesses in Mount Prospect. With a
-          passion for landscaping and a keen eye for detail, I founded Alex's
-          Lawnscaping to help clients achieve beautiful and well-maintained
-          outdoor spaces they can enjoy year-round. As a sole proprietor, I take
-          pride in personally overseeing every aspect of your lawn care needs. I
-          look forward to the opportunity to work with you and transform your
-          outdoor space into a lush and inviting landscape you'll love. Contact
-          me today to schedule a consultation, and let's bring your lawnscaping
-          vision to life!
+          M.P. Green Teens is a team of passionate high school students
+          dedicated to transforming your outdoor spaces. Every member is a young
+          and hard-working entrepreneur who comes from Prospect High School. We
+          bring fresh prospectives and youthful energy to the neighborhood.
+          Top-notch care is ensured on every project to make sure we satisfy
+          your needs. From gardening to mowing lawns, we got you covered.
         </div>
       </article>
     </section>

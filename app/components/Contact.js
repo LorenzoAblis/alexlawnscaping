@@ -31,7 +31,7 @@ const Contact = () => {
         <ContactCard
           icon="bi bi-telephone-fill"
           name="Phone"
-          content="312-444-1423"
+          content="224-522-4243"
         />
       </div>
     </section>

@@ -4,9 +4,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   align-items: center;
-  overflow: hidden;
 
   .testimonials-header {
     margin-bottom: 1rem;
@@ -28,31 +27,29 @@
   }
 
   .testimonials-content {
+    margin-left: 1rem;
+    gap: 1rem;
     display: flex;
-    gap: 2.5rem;
-    overflow: hidden;
-    animation: 20s slide infinite linear;
+    flex-direction: row;
+    max-width: 90%;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
 
-    @keyframes slide {
-      from {
-        transform: translateX(calc(30% + 35rem));
-      }
-      to {
-        transform: translateX(calc(-30% - 35rem));
-      }
-    }
-
-    &:hover {
-      animation-play-state: paused;
+    .card {
+      flex-shrink: 0;
     }
   }
 
   .card {
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     border: none;
-    width: 15rem;
+    width: 70vw;
     padding: 1rem;
-    border-radius: 10%;
+
+    height: min-content;
+    border-radius: 2rem;
     background-color: #f1f1f1;
+    scroll-snap-align: start;
   }
 }

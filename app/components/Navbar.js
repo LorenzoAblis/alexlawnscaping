@@ -41,7 +41,7 @@ const Navbar = () => {
           height={100}
         />
 
-        <a href="tel:123-456-7890">
+        <a href="tel:224-522-4243">
           <i class="bi bi-telephone-fill"></i>
         </a>
       </nav>

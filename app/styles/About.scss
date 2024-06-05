@@ -2,7 +2,7 @@
 
 .about-section {
   display: flex;
-  height: 120vh;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   background-color: $accent;
@@ -27,22 +27,18 @@
     .about-header {
       margin-bottom: 2rem;
 
-      .about-subtitle {
-        font-size: 1.5rem;
+      .about-title {
+        font-size: 2rem;
         font-weight: 600;
         color: white;
         text-shadow: 0 0 1rem $primary;
-      }
-
-      .about-title {
-        font-weight: 600;
-        font-size: 2rem;
       }
     }
 
     .about-text {
       width: 90%;
       margin: auto;
+      font-weight: 500;
     }
   }
 }

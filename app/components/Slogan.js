@@ -17,9 +17,9 @@ const Slogan = () => {
       <div className="slogan-text">
         <h1>Transforming lawns into stunning outdoor spaces</h1>
         <p>
-          Welcome to Alex Lawnscaping, where I specialize in creating beautiful
-          and functional outdoor environments. With my expertise and top-notch
-          services, I'll turn your lawn into a masterpiece.
+          Welcome to M.P. Green Teens, where we specialize in creating beautiful
+          and functional outdoor environments. With our expertise and top-notch
+          services, we'll turn your lawn into a masterpiece.
         </p>
         <div className="link-container">
           <a href="#benefits">Learn More</a>

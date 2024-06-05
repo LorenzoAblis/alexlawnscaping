@@ -13,13 +13,14 @@ const Footer = () => {
         <section className="contact">
           <div className="phone pb-1">
             <p>
-              <i className="bi bi-telephone-fill"></i> 312-444-1423
+              <i className="bi bi-telephone-fill"></i> 224-522-4243
             </p>
           </div>
           <div className="email">
             <i className="bi bi-envelope-fill"></i> info@yourdomain.com
           </div>
         </section>
+        <p className="copy">&copy; M.P. Green Teens. All rights reserved.</p>
       </div>
     </footer>
   );
