@@ -28,7 +28,7 @@ ServicesCard.propTypes = {
 
 const Services = () => {
   return (
-    <section className="services-section" id="services-section">
+    <section className="services-section" id="services">
       <div className="services-header">
         <h1 className="fw-bold services-title">My Services</h1>
         <h5 className="services-subtitle">

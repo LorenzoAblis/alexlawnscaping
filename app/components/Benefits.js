@@ -3,7 +3,7 @@ import "../styles/Benefits.scss";
 
 const Benefits = () => {
   return (
-    <section className="benefits-section">
+    <section className="benefits-section" id="benefits">
       <div className="benefits-text">
         <section className="benefits-header">
           <h2>Enhance Your Space with Our Services</h2>

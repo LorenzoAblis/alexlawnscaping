@@ -22,7 +22,7 @@ const Slogan = () => {
           services, I'll turn your lawn into a masterpiece.
         </p>
         <div className="link-container">
-          <a href="#passion-section">Learn More</a>
+          <a href="#benefits">Learn More</a>
         </div>
       </div>
     </section>

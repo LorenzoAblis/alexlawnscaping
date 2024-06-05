@@ -18,6 +18,7 @@ nav {
     display: none;
   }
 
+  button,
   i {
     display: none;
   }
@@ -40,11 +41,22 @@ nav {
 
   background-color: $primary;
 
+  button {
+    background-color: transparent;
+    display: flex;
+    width: 10vw;
+    margin-left: 1rem;
+    border: none;
+  }
+
   i {
     color: white;
     display: block;
     font-size: 1.5rem;
-    padding: 0 1.5rem;
+  }
+
+  a {
+    margin-right: 2rem;
   }
 
   .next-img {
@@ -53,4 +65,52 @@ nav {
     width: 15vw;
     margin: 0.5rem auto;
   }
+}
+
+aside {
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  background-color: $primary;
+  box-shadow: 0 0 1rem rgba(black, 0.5);
+
+  button {
+    background-color: transparent;
+    display: flex;
+    width: 10vw;
+    margin-left: 1rem;
+    border: none;
+    margin-top: 1.5rem;
+  }
+
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-top: 2.5rem;
+    gap: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  i {
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+.show-sidebar {
+  opacity: 1;
+  z-index: 5000;
+}
+
+.hide-sidebar {
+  opacity: 0;
+  z-index: -5000;
 }

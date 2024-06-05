@@ -18,7 +18,7 @@ TestimonialsCard.propTypes = {
 
 const Testimonials = () => {
   return (
-    <section className="testimonials-section" id="testimonials-section">
+    <section className="testimonials-section" id="testimonials">
       <div className="testimonials-header">
         <h4 className="testimonials-subtitle fw-semibold">Testimonals</h4>
         <h2 className="testimonials-title fw-semibold">

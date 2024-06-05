@@ -12,7 +12,9 @@ const Footer = () => {
         </div>
         <section className="contact">
           <div className="phone pb-1">
-            <i className="bi bi-telephone-fill"></i> 312-444-1423
+            <p>
+              <i className="bi bi-telephone-fill"></i> 312-444-1423
+            </p>
           </div>
           <div className="email">
             <i className="bi bi-envelope-fill"></i> info@yourdomain.com

@@ -20,14 +20,9 @@ ContactCard.propTypes = {
 
 const Contact = () => {
   return (
-    <section className="contact-section" id="contact-section">
+    <section className="contact-section" id="contact">
       <h2>Contact Us</h2>
       <div className="contact-cards">
-        <ContactCard
-          icon="bi bi-geo-alt-fill"
-          name="Address"
-          content="819 S Central Rd, Mt Prospect IL"
-        />
         <ContactCard
           icon="bi bi-envelope-fill"
           name="Email"
