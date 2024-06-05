@@ -6,7 +6,8 @@
     "dev": "next dev -H 192.168.0.33",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "bootstrap-icons": "^1.11.3",
