@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Feedback from "./components/Feedback";
 import About from "./components/About";
+import Founder from "./components/Founder";
 import Contact from "./components/Contact";
 // import Location from "./components/Location";
 import Navbar from "./components/Navbar";
@@ -43,6 +44,7 @@ export default function Home() {
         <Testimonials />
         <Feedback />
         <About />
+        <Founder />
         <Contact />
         {/* <Location /> */}
       </main>

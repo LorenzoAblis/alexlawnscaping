@@ -8,7 +8,7 @@ const ServicesCard = ({ img, title, subtitle }) => {
     <article className="card">
       <h3 className="fw-bold card-title">{title}</h3>
       <Image
-        src={`/${img}.jpg`}
+        src={`/${img}.webp`}
         alt={img}
         width={1000}
         height={1000}
@@ -32,40 +32,46 @@ const Services = () => {
       <div className="services-header">
         <h1 className="fw-bold services-title">Our Services</h1>
         <h5 className="services-subtitle">
-          We provide a comprehensive range of services in the landscaping
-          industry, ensuring your lawn stays healthy and beautiful all year
-          round.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          officiis aperiam error illum sit eligendi, commodi tenetur ipsa
+          inventore delectus asperiores tempore molestiae porro, debitis
+          dignissimos quia odit eos fugit velit rerum repellat amet. Nam aliquam
+          aut soluta, architecto inventore reiciendis non sed ab, animi
+          consectetur odit hic! Beatae, consequatur.
         </h5>
       </div>
       <div className="services-content">
         <ServicesCard
           img="mowing"
           title="Mowing / Edging"
-          subtitle="My mowing service ensures your lawn can breathe, promoting root
-            growth and improving water and nutrient absorption. Let me help your
-            lawn thrive with my profession."
+          subtitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          officiis aperiam error illum sit eligendi, commodi tenetur ipsa
+          inventore delectus asperiores tempore molestiae porro, debitis
+          dignissimos quia odit eos fugit velit rerum repellat amet."
         />
         <ServicesCard
           img="weeding"
           title="Weeding"
-          subtitle="Edging gives your lawn a clean, manicured look. My expertise creates
-            clear lines between your lawn and adjacent areas, enhancing the
-            overall aesthetic of your outdoor space."
+          subtitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          officiis aperiam error illum sit eligendi, commodi tenetur ipsa
+          inventore delectus asperiores tempore molestiae porro, debitis
+          dignissimos quia odit eos fugit velit rerum repellat amet."
         />
         <ServicesCard
-          img="fertilization"
+          img="hedge"
           title="Hedge Trimming"
-          subtitle="Fertilizing is key to a lush, green lawn. I provide a balanced blend
-            of nutrients tailored to your lawn's specific needs, promoting
-            healthy growth and resilience."
+          subtitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          officiis aperiam error illum sit eligendi, commodi tenetur ipsa
+          inventore delectus asperiores tempore molestiae porro, debitis
+          dignissimos quia odit eos fugit velit rerum repellat amet."
         />
         <ServicesCard
           img="springFall"
           title="Spring / Fall Cleanup"
-          subtitle="Preparing your lawn for the changing seasons is crucial for maintaining 
-          its health and beauty. We ensure your yard is 
-          free of debris, leaves, and dead grass,
-          leaving it refreshed and ready to thrive."
+          subtitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          officiis aperiam error illum sit eligendi, commodi tenetur ipsa
+          inventore delectus asperiores tempore molestiae porro, debitis
+          dignissimos quia odit eos fugit velit rerum repellat amet."
         />
       </div>
     </section>

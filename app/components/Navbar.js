@@ -6,9 +6,11 @@ import Image from "next/image";
 
 const Navbar = () => {
   const routes = [
+    { name: "Home", route: "" },
     { name: "Services", route: "services" },
     { name: "Testimonials", route: "testimonials" },
     { name: "About", route: "about" },
+    { name: "Founder", route: "founder" },
     { name: "Contact", route: "contact" },
   ];
 
@@ -34,7 +36,7 @@ const Navbar = () => {
           <i class="bi bi-list"></i>
         </button>
         <Image
-          src="/logo.jpg"
+          src="/logo.webp"
           alt="logo"
           className="next-img"
           width={500}

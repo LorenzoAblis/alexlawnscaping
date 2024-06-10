@@ -1,0 +1,77 @@
+@import "../main.scss";
+
+.founder-section {
+  display: flex;
+  height: 140vh;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 0;
+
+  .founder-header {
+    margin-bottom: 1rem;
+
+    h4 {
+      font-size: 1.25rem;
+      text-align: center;
+      color: black;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: $primary;
+      text-shadow: 0 0 0.1rem $accent;
+    }
+  }
+
+  .founder-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .next-img {
+      object-fit: cover;
+      width: 80vw;
+      height: 60vh;
+      border-radius: 2.5rem;
+      box-shadow: 1rem 1rem 0 $primary;
+    }
+
+    .founder-text {
+      text-align: center;
+      padding-top: 10vh;
+      font-weight: 500;
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .founder-section {
+    height: 90vh;
+
+    .founder-header {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .founder-content {
+      width: 90%;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .next-img {
+        width: 30vw;
+      }
+
+      .founder-text {
+        width: 50%;
+        font-size: 1.15rem;
+        margin-top: -15vh;
+      }
+    }
+  }
+}

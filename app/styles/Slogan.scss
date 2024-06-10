@@ -5,7 +5,7 @@
   justify-content: space-between;
   gap: 3.5rem;
   padding: 0rem 2rem;
-  padding-top: 8rem;
+  height: 90vh;
 
   .img-overlay {
     position: absolute;
@@ -22,6 +22,7 @@
   }
 
   .slogan-text {
+    padding-top: 8rem;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -59,11 +60,10 @@
 @media (min-width: 768px) {
   .slogan-section {
     margin-left: 2.5vw;
-    margin-top: 5vh;
+    padding-top: 3rem;
 
     .slogan-text {
       width: 60vw;
-      margin-bottom: 3rem;
 
       h1 {
         font-size: 3rem;

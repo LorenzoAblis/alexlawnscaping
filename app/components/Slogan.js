@@ -6,7 +6,7 @@ const Slogan = () => {
   return (
     <section className="slogan-section">
       <Image
-        src="/lawn.jpg"
+        src="/lawn.webp"
         alt="lawn"
         fill
         objectFit="cover"
@@ -17,9 +17,10 @@ const Slogan = () => {
       <div className="slogan-text">
         <h1>Transforming lawns into stunning outdoor spaces</h1>
         <p>
-          Welcome to M.P. Green Teens, where we specialize in creating beautiful
-          and functional outdoor environments. With our expertise and top-notch
-          services, we'll turn your lawn into a masterpiece.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          dolorum ex quis et ducimus deleniti omnis delectus totam sit doloribus
+          dolores cumque, mollitia harum aspernatur iusto magni officiis!
+          Libero, possimus?
         </p>
         <div className="link-container">
           <a href="#benefits">Learn More</a>

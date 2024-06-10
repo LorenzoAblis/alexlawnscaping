@@ -6,8 +6,8 @@ const About = () => {
   return (
     <section className="about-section" id="about">
       <Image
-        src="/alex.jpg"
-        alt="alex"
+        src="/team.webp"
+        alt="team"
         width={1000}
         height={1000}
         objectFit="cover"
