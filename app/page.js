@@ -15,6 +15,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
+      <link rel="icon" href="/images/favicon.ico" sizes="any" />
       <Toaster
         position="top-right"
         reverseOrder={false}
