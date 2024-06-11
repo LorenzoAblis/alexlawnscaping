@@ -14,6 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -32,6 +34,22 @@ export default function RootLayout({ children }) {
           href="/images/favicon-16x16.png"
         />
         <link rel="manifest" href="/images/site.webmanifest" />
+
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZCTZLBMW1X"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ZCTZLBMW1X');
+            `,
+          }}
+        />
       </Head>
       <body className={raleway.className}>{children}</body>
     </html>
