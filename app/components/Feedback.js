@@ -13,22 +13,32 @@ const Feedback = () => {
     approved: false,
   });
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("feedback test");
+
     if (feedbackMsg.name) {
-      await set(ref(db, "feedback/" + feedbackMsg.name), {
-        name: feedbackMsg.name,
-        msg: feedbackMsg.msg,
-        approved: false,
-      });
+      try {
+        await set(ref(db, "feedback/" + feedbackMsg.name), {
+          name: feedbackMsg.name,
+          msg: feedbackMsg.msg,
+          approved: false,
+        });
+        setFeedbackMsg({
+          name: "",
+          msg: "",
+          approved: false,
+        });
+        toast.success(
+          "Thank you for your feedback! We hope to work with you again!"
+        );
+      } catch (error) {
+        console.error("Error submitting feedback: ", error);
+        toast.error("Failed to submit feedback. Please try again.");
+      }
+    } else {
+      toast.error("Please enter your name.");
     }
-    setFeedbackMsg({
-      name: "",
-      msg: "",
-      approved: false,
-    });
-    toast.success(
-      "Thank you for your feedback! We hope to work with you again!"
-    );
   };
 
   const handleChange = (e) => {
@@ -45,18 +55,24 @@ const Feedback = () => {
       <div className="feedback-header">
         <h2>Help us Improve</h2>
       </div>
-      <div className="feedback-form">
+      <form className="feedback-form" onSubmit={handleSubmit}>
         <h3>Your name</h3>
-        <input type="text" id="name" name="name" onChange={handleChange} />
-        <h3>Feedback / Opinions</h3>
-        <textarea
+        <input
           type="text"
-          id="feedback"
-          name="msg"
+          id="name"
+          name="name"
+          value={feedbackMsg.name}
           onChange={handleChange}
         />
-        <button onClick={handleSubmit}>Submit</button>
-      </div>
+        <h3>Feedback / Opinions</h3>
+        <textarea
+          id="feedback"
+          name="msg"
+          value={feedbackMsg.msg}
+          onChange={handleChange}
+        />
+        <button type="submit">Submit</button>
+      </form>
     </section>
   );
 };
