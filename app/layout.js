@@ -1,6 +1,6 @@
 import { Raleway } from "next/font/google";
 import Head from "next/head";
-import { GoogleAnalytics } from "next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./main.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
