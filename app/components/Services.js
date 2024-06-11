@@ -40,7 +40,7 @@ const Services = () => {
           subtitle="We take pride in providing top-notch lawn mowing services. With
           attention to detail and a commitment to excellence, we'll ensure your
           lawn stays perfectly manicured and healthy. We will mow your lawn to
-          your prefered length, edge and trim it, and we will even haul away the
+          your preferred length, edge and trim it, and we will even haul away the
           clippings if that is your preference. We can also bag it and leave it
           by your curb, or if the clippings are minimal, we can leave the
           clippings on your grass to promote better growth, as the grass

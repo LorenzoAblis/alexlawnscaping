@@ -23,7 +23,7 @@ const Slogan = () => {
           your enjoyment of the outdoors.
         </p>
         <div className="link-container">
-          <a href="#benefits">Learn More</a>
+          <a href="#services">Learn More</a>
         </div>
       </div>
     </section>
