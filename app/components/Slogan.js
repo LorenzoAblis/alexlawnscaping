@@ -17,10 +17,10 @@ const Slogan = () => {
       <div className="slogan-text">
         <h1>Transforming lawns into stunning outdoor spaces</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          dolorum ex quis et ducimus deleniti omnis delectus totam sit doloribus
-          dolores cumque, mollitia harum aspernatur iusto magni officiis!
-          Libero, possimus?
+          Welcome to M.P. Green Teens! Our mission is to transform your lawns
+          and gardens into beautiful, vibrant spaces. Let us help you achieve
+          your landscaping goals, enhancing both the beauty of your home and
+          your enjoyment of the outdoors.
         </p>
         <div className="link-container">
           <a href="#benefits">Learn More</a>

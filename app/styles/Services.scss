@@ -1,33 +1,16 @@
 @import "../main.scss";
 
 .services-section {
-  // margin-top: 10rem;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   text-align: center;
 
-  .services-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  h5 {
+    font-size: 1.35rem;
+    font-weight: 500;
     width: 90%;
-
-    h1 {
-      font-size: 2rem;
-      color: $primary;
-      margin: 0;
-      margin-top: 2rem;
-    }
-
-    .services-subtitle {
-      width: 100%;
-      font-size: 1rem;
-      letter-spacing: 1px;
-      font-weight: 500;
-    }
   }
 
   .services-content {
@@ -63,13 +46,9 @@
 @media (min-width: 768px) {
   .services-section {
     padding-top: 3rem;
-    .services-header {
-      width: 75%;
 
-      .services-subtitle {
-        letter-spacing: initial;
-        font-size: 1.35rem;
-      }
+    h5 {
+      width: 50%;
     }
 
     .services-content {
@@ -108,7 +87,7 @@
 
         p {
           margin: 0;
-          margin-top: -2rem;
+          margin-top: -5rem;
           font-size: 1.15rem;
         }
       }

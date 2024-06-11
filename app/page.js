@@ -1,14 +1,13 @@
-import Slogan from "./components/Slogan";
-// import Benefits from "./components/Benefits";
-// import Passion from "./components/Passion";
 import { Toaster } from "react-hot-toast";
+
+import Slogan from "./components/Slogan";
+import Pricing from "./components/Pricing";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Feedback from "./components/Feedback";
 import About from "./components/About";
 import Founder from "./components/Founder";
 import Contact from "./components/Contact";
-// import Location from "./components/Location";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -39,15 +38,13 @@ export default function Home() {
       <Navbar />
       <main>
         <Slogan />
-        {/* <Benefits /> */}
-        {/* <Passion /> */}
+        <Pricing />
         <Services />
         <Testimonials />
         <Feedback />
         <About />
         <Founder />
         <Contact />
-        {/* <Location /> */}
       </main>
       <Footer />
     </>

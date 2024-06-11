@@ -19,15 +19,14 @@ const Founder = () => {
           className="next-img"
         />
         <div className="founder-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          sit exercitationem, numquam quasi aspernatur cum sequi possimus
-          deleniti repudiandae aliquid, quidem explicabo nihil. Blanditiis
-          dolorum aspernatur dolores aliquid veniam architecto, tempora aut ad
-          adipisci alias odio, ea corporis explicabo minima? Ipsa explicabo quae
-          eum, dolor nihil reprehenderit dicta ad repudiandae fuga natus, ex
-          dolorem soluta pariatur inventore, tempore neque aliquam magnam?
-          Recusandae ratione iusto possimus in magnam id molestias illo saepe
-          aliquam, fuga, laudantium error.
+          Meet Alex, the visionary founder of M.P. Green Teens, a dynamic high
+          school-run landscaping business. Combining a passion for nature, 3
+          years of landscaping experience, and hard work with entrepreneurial
+          spirit, Alex has cultivated a dedicated team of young landscapers
+          committed to transforming local lawns and gardens in the bright
+          community of Mount Prospect. Under his leadership, M.P. Green Teens is
+          redefining landscaping services with fresh ideas, youthful energy, and
+          a commitment to excellence.
         </div>
       </article>
     </section>

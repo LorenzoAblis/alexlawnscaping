@@ -14,7 +14,8 @@
     height: 40vh;
     object-fit: cover;
     border-radius: 10%;
-    width: 70%;
+    width: 90%;
+    box-shadow: 0 0 1.5rem rgba(white, 0.5);
   }
 
   .about-content {
@@ -53,8 +54,8 @@
     height: 90vh;
 
     .next-img {
-      width: 100%;
-      height: 70vh;
+      width: 45vw;
+      height: 60vh;
       grid-column: 1 / 2;
       grid-row: 1 / span 2;
       margin: 0;

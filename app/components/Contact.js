@@ -26,12 +26,12 @@ const Contact = () => {
         <ContactCard
           icon="bi bi-envelope-fill"
           name="Email"
-          content="info@yourdomain.com"
+          content="mpgreenteens@gmail.com"
         />
         <ContactCard
           icon="bi bi-telephone-fill"
           name="Phone"
-          content="224-522-4243"
+          content="+1 224-522-4243"
         />
       </div>
     </section>

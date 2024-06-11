@@ -340,6 +340,79 @@ main {
     font-size: 1.25rem;
   }
 }
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/Pricing.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+body,
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-section .pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pricing-section .pricing-header h1 {
+  font-size: 2rem;
+  color: #81c13c;
+  margin: 0;
+  margin-top: 2rem;
+}
+.pricing-section .pricing-header h5 {
+  width: 90%;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.pricing-section h2 {
+  text-align: center;
+  color: #98cd5f;
+}
+.pricing-section .pricing-content {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+.pricing-section .pricing-content .pricing-card {
+  text-align: center;
+  flex-shrink: 0;
+  width: 75vw;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  background-color: #b0d983;
+  scroll-snap-align: start;
+  height: min-content;
+}
+.pricing-section .pricing-content .pricing-card h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+.pricing-section .pricing-content .pricing-card p {
+  font-size: 1.15rem;
+}
+
+@media (min-width: 768px) {
+  .pricing-section .pricing-header h5 {
+    letter-spacing: initial;
+    font-size: 1.35rem;
+    width: 50%;
+  }
+  .pricing-section .pricing-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pricing-section .pricing-content .pricing-card {
+    width: 25%;
+    height: auto;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  }
+}
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/Services.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -356,24 +429,10 @@ main {
   align-items: center;
   text-align: center;
 }
-.services-section .services-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 90%;
-}
-.services-section .services-header h1 {
-  font-size: 2rem;
-  color: #81c13c;
-  margin: 0;
-  margin-top: 2rem;
-}
-.services-section .services-header .services-subtitle {
-  width: 100%;
-  font-size: 1rem;
-  letter-spacing: 1px;
+.services-section h5 {
+  font-size: 1.35rem;
   font-weight: 500;
+  width: 90%;
 }
 .services-section .services-content {
   display: inline;
@@ -405,12 +464,8 @@ main {
   .services-section {
     padding-top: 3rem;
   }
-  .services-section .services-header {
-    width: 75%;
-  }
-  .services-section .services-header .services-subtitle {
-    letter-spacing: initial;
-    font-size: 1.35rem;
+  .services-section h5 {
+    width: 50%;
   }
   .services-section .services-content {
     margin-top: 2rem;
@@ -443,7 +498,7 @@ main {
   }
   .services-section .services-content .card p {
     margin: 0;
-    margin-top: -2rem;
+    margin-top: -5rem;
     font-size: 1.15rem;
   }
 }
@@ -470,7 +525,8 @@ main {
   height: 40vh;
   object-fit: cover;
   border-radius: 10%;
-  width: 70%;
+  width: 90%;
+  box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.5);
 }
 .about-section .about-content {
   margin-left: 3rem;
@@ -504,8 +560,8 @@ main {
     height: 90vh;
   }
   .about-section .next-img {
-    width: 100%;
-    height: 70vh;
+    width: 45vw;
+    height: 60vh;
     grid-column: 1/2;
     grid-row: 1/span 2;
     margin: 0;

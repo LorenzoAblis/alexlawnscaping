@@ -13,11 +13,11 @@ const Footer = () => {
         <section className="contact">
           <div className="phone pb-1">
             <p>
-              <i className="bi bi-telephone-fill"></i> 224-522-4243
+              <i className="bi bi-telephone-fill"></i> +1 224-522-4243
             </p>
           </div>
           <div className="email">
-            <i className="bi bi-envelope-fill"></i> info@yourdomain.com
+            <i className="bi bi-envelope-fill"></i> mpgreenteens@gmail.com
           </div>
         </section>
         <p className="copy">&copy; M.P. Green Teens. All rights reserved.</p>
