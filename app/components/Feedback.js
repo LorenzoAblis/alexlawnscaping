@@ -21,7 +21,7 @@ const Feedback = () => {
       const sanitizedName = feedbackMsg.name.replace(/[./]/g, "a");
 
       try {
-        await set(ref(db, "test/" + sanitizedName), {
+        await set(ref(db, "feedback/" + sanitizedName), {
           name: feedbackMsg.name,
           msg: feedbackMsg.msg,
           approved: false,
