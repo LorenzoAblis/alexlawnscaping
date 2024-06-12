@@ -18,19 +18,21 @@ const Feedback = () => {
     console.log("feedback test");
 
     if (feedbackMsg.name) {
-      const sanitizedName = feedbackMsg.name.replace(/\./g, "");
+      const sanitizedName = feedbackMsg.name.replace(/[./]/g, "a");
 
       try {
-        await set(ref(db, "feedback/" + sanitizedName), {
+        await set(ref(db, "test/" + sanitizedName), {
           name: feedbackMsg.name,
           msg: feedbackMsg.msg,
           approved: false,
         });
+
         setFeedbackMsg({
           name: "",
           msg: "",
           approved: false,
         });
+
         toast.success(
           "Thank you for your feedback! We hope to work with you again!"
         );
