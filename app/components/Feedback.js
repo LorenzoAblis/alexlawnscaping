@@ -18,8 +18,10 @@ const Feedback = () => {
     console.log("feedback test");
 
     if (feedbackMsg.name) {
+      const sanitizedName = feedbackMsg.name.replace(/\./g, "");
+
       try {
-        await set(ref(db, "feedback/" + feedbackMsg.name), {
+        await set(ref(db, "feedback/" + sanitizedName), {
           name: feedbackMsg.name,
           msg: feedbackMsg.msg,
           approved: false,
@@ -34,7 +36,9 @@ const Feedback = () => {
         );
       } catch (error) {
         console.error("Error submitting feedback: ", error);
-        toast.error("Failed to submit feedback. Please try again.");
+        toast.error(
+          `Failed to submit feedback. Please try again. \n\n${error}`
+        );
       }
     } else {
       toast.error("Please enter your name.");
