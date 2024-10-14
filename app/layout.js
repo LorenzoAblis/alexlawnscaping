@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "M.P Green Teens",
+  title: "M.P Green Teens | Fall Cleanup & Lawnscaping Services in Illinois",
   description: "Transforming lawns into stunning outdoor spaces",
   keywords:
     "fall cleanup, leaf removal, yard cleanup, lawn care, Illinois lawnscaping",
