@@ -9,6 +9,8 @@ const raleway = Raleway({ subsets: ["latin"] });
 export const metadata = {
   title: "M.P Green Teens",
   description: "Transforming lawns into stunning outdoor spaces",
+  keywords:
+    "fall cleanup, leaf removal, yard cleanup, lawn care, Illinois lawnscaping",
 };
 
 export default function RootLayout({ children }) {

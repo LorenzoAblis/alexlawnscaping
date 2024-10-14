@@ -15,7 +15,7 @@ main {
   align-items: center;
 }
 .feedback-section .feedback-header h2 {
-  color: #81c13c;
+  color: #7a4e1a;
   font-size: 2rem;
 }
 .feedback-section .feedback-form {
@@ -93,7 +93,7 @@ nav .next-img {
   object-fit: contain;
   height: 50%;
   width: 20vw;
-  filter: drop-shadow(0 0 1rem rgba(176, 217, 131, 0.35));
+  filter: drop-shadow(0 0 1rem rgba(255, 140, 0, 0.35));
   margin-left: 10vw;
 }
 
@@ -102,7 +102,7 @@ nav .next-img {
   transition: all 1s;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
   display: flex;
-  background-color: #81c13c;
+  background-color: #7a4e1a;
 }
 .sticky button {
   background-color: transparent;
@@ -130,7 +130,7 @@ aside {
   position: fixed;
   width: 50vw;
   height: 100vh;
-  background-color: #81c13c;
+  background-color: #7a4e1a;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 aside button {
@@ -184,7 +184,7 @@ aside i {
   }
   .sticky .next-img {
     margin: 1rem 4rem;
-    width: 5vw;
+    width: 3.5vw;
   }
   .sticky .link-container {
     display: flex;
@@ -196,12 +196,12 @@ aside i {
     display: flex;
     text-decoration: none;
     color: white;
-    font-size: 1.35vw;
+    font-size: 1.15vw;
     font-weight: 500;
     align-items: center;
   }
   .sticky .link-container a:hover {
-    color: #b0d983;
+    color: #ff8c00;
   }
   .sticky a {
     display: none;
@@ -232,10 +232,11 @@ main {
 .testimonials-section .testimonials-header h2 {
   font-size: 1.75rem;
   text-align: center;
+  color: #ff8c00;
 }
 .testimonials-section .testimonials-header .testimonials-subtitle {
   text-align: center;
-  color: #81c13c;
+  color: #98cd5f;
   margin-bottom: 1rem;
 }
 .testimonials-section .testimonials-content {
@@ -322,7 +323,7 @@ main {
   color: white;
   font-size: 1.15rem;
   font-weight: 500;
-  border: 0.2rem solid #b0d983;
+  border: 0.2rem solid #ff8c00;
 }
 
 @media (min-width: 768px) {
@@ -332,6 +333,18 @@ main {
   }
   .slogan-section .slogan-text {
     width: 60vw;
+  }
+  .slogan-section .slogan-text h1 {
+    font-size: 3rem;
+  }
+  .slogan-section .slogan-text p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1624px) {
+  .slogan-section .slogan-text {
+    width: 50vw;
+    margin-top: 5vh;
   }
   .slogan-section .slogan-text h1 {
     font-size: 3rem;
@@ -357,14 +370,14 @@ main {
 }
 .pricing-section .pricing-header h1 {
   font-size: 2rem;
-  color: #81c13c;
+  color: #7a4e1a;
   margin: 0;
   margin-top: 2rem;
 }
 .pricing-section .pricing-header h5 {
   width: 90%;
   font-size: 1rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.25px;
   font-weight: 500;
 }
 .pricing-section h2 {
@@ -385,7 +398,7 @@ main {
   width: 75vw;
   padding: 1rem;
   border-radius: 2.5rem;
-  background-color: #b0d983;
+  background-color: #ff8c00;
   scroll-snap-align: start;
   height: min-content;
 }
@@ -398,6 +411,9 @@ main {
 }
 
 @media (min-width: 768px) {
+  .pricing-section {
+    margin-top: 5vh;
+  }
   .pricing-section .pricing-header h5 {
     letter-spacing: initial;
     font-size: 1.35rem;
@@ -452,12 +468,12 @@ main {
   height: 40vh;
   object-fit: cover;
   border-radius: 5%;
-  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.5rem 0.5rem 0rem #98cd5f;
 }
 .services-section .services-content .card .card-title {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  color: #b0d983;
+  color: #ff8c00;
 }
 
 @media (min-width: 768px) {
@@ -475,7 +491,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 3rem;
-    grid-gap: 3rem;
+    grid-gap: 5rem;
   }
   .services-section .services-content .card:nth-child(odd) img {
     grid-column: 1/2;
@@ -485,7 +501,7 @@ main {
   }
   .services-section .services-content .card img {
     grid-row: 1/span 2;
-    width: 90%;
+    width: 100%;
   }
   .services-section .services-content .card .card-title,
   .services-section .services-content .card p {
@@ -516,7 +532,7 @@ main {
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  background-color: #b0d983;
+  background-color: #ff8c00;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -542,7 +558,7 @@ main {
   font-size: 2rem;
   font-weight: 600;
   color: white;
-  text-shadow: 0 0 1rem #81c13c;
+  text-shadow: 0 0 1rem #7a4e1a;
 }
 .about-section .about-content .about-text {
   width: 90%;
@@ -575,7 +591,8 @@ main {
     font-size: 2.5rem;
   }
   .about-section .about-content .about-text {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
+    line-height: 1.65rem;
   }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -607,8 +624,8 @@ main {
 .founder-section .founder-header h1 {
   font-size: 2rem;
   text-align: center;
-  color: #81c13c;
-  text-shadow: 0 0 0.1rem #b0d983;
+  color: #7a4e1a;
+  text-shadow: 0 0 0.1rem #ff8c00;
 }
 .founder-section .founder-content {
   display: flex;
@@ -620,7 +637,7 @@ main {
   width: 80vw;
   height: 60vh;
   border-radius: 2.5rem;
-  box-shadow: 1rem 1rem 0 #81c13c;
+  box-shadow: 1rem 1rem 0 #7a4e1a;
 }
 .founder-section .founder-content .founder-text {
   text-align: center;
@@ -646,7 +663,8 @@ main {
   }
   .founder-section .founder-content .founder-text {
     width: 50%;
-    font-size: 1.15rem;
+    line-height: 1.75rem;
+    font-size: 1.25rem;
     margin-top: -15vh;
   }
 }
@@ -675,6 +693,7 @@ main {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
+  color: #98cd5f;
 }
 .contact-section .contact-cards {
   display: flex;
@@ -697,7 +716,7 @@ main {
 .contact-section .contact-cards .contact-card i {
   margin-bottom: 1rem;
   font-size: 4rem;
-  color: #81c13c;
+  color: #ff8c00;
 }
 .contact-section .contact-cards .contact-card h3 {
   font-size: 1.5rem;
@@ -745,7 +764,7 @@ main {
 .footer .footer-content .question hr {
   margin-top: auto;
   border: none;
-  border-top: 0.5rem solid #81c13c;
+  border-top: 0.5rem solid #7a4e1a;
   opacity: 1;
   width: 100%;
 }
@@ -760,11 +779,14 @@ main {
   text-align: left;
 }
 .footer .footer-content h1 span {
-  color: #81c13c;
-  text-shadow: 0 0 100px #81c13c;
+  color: #7a4e1a;
+  text-shadow: 0 0 100px #7a4e1a;
 }
 
 @media (min-width: 768px) {
+  .footer {
+    height: min-content;
+  }
   .footer .footer-content .question {
     width: 40%;
   }

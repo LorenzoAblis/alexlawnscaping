@@ -16,6 +16,7 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
+    color: $secondary;
   }
 
   .contact-cards {
@@ -40,7 +41,7 @@
       i {
         margin-bottom: 1rem;
         font-size: 4rem;
-        color: $primary;
+        color: $accent;
       }
 
       h3 {

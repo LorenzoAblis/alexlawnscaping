@@ -75,3 +75,20 @@
     }
   }
 }
+
+@media (min-width: 1624px) {
+  .slogan-section {
+    .slogan-text {
+      width: 50vw;
+      margin-top: 5vh;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

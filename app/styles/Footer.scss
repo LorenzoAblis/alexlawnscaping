@@ -47,6 +47,7 @@
 
 @media (min-width: 768px) {
   .footer {
+    height: min-content;
     .footer-content {
       .question {
         width: 40%;
