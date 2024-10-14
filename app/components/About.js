@@ -21,7 +21,8 @@ const About = () => {
           M.P. Green Teens is a team of passionate high school students
           dedicated to transforming your outdoor spaces. Every member is a young
           and hard-working entrepreneur who comes from Prospect High School. We
-          bring fresh prospectives and youthful energy to the neighborhood.
+          bring fresh prospectives and youthful energy to the neighborhood
+          providing fall cleanup & lawnscaping to Mount Prospect, Illinois.
           Top-notch care is ensured on every project to make sure we satisfy
           your needs. From gardening to mowing lawns, we got you covered.
         </div>
