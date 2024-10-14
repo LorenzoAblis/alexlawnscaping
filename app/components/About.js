@@ -15,7 +15,7 @@ const About = () => {
       />
       <article className="about-content">
         <div className="about-header">
-          <h1 className="about-title">About The Team!</h1>
+          <h2 className="about-title">About The Team!</h2>
         </div>
         <div className="about-text">
           M.P. Green Teens is a team of passionate high school students

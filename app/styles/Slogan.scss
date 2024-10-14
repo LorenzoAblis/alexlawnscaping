@@ -52,6 +52,11 @@
         font-size: 1.15rem;
         font-weight: 500;
         border: 0.2rem solid $accent;
+        transition: background-color 0.35s;
+
+        &:hover {
+          background-color: $accent;
+        }
       }
     }
   }

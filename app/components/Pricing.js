@@ -33,15 +33,16 @@ const Pricing = () => {
   return (
     <section className="pricing-section" id="pricing">
       <div className="pricing-header">
-        <h1>🎃&nbsp; Our Services &nbsp;🎃</h1>
+        <h2>🍂 &nbsp; Our Services &nbsp; 🍂</h2>
         <h5>
           {/* We provide many services to ensure your spaces get the proper care and
           attention. */}
-          Spooky season is here, and it's time to give your yard a fall
-          makeover! From pumpkin-filled patches to haunted yardscapes, let us
-          help transform your outdoor space into an autumn masterpiece. Get
-          ready for a season full of vibrant leaves 🍂, spooky accents 💀, and
-          cozy lawnscapes 🥧!
+          Keep your outdoor spaces looking their best with MP Green Teens! We
+          offer seasonal cleanups, leaf removal, lawn aeration, pruning, and
+          mulching to prepare your yard for the colder months ahead. Let us
+          handle the hard work so you can enjoy a tidy, well-maintained
+          landscape all season long. Contact us today to schedule your fall
+          services now!
         </h5>
       </div>
 

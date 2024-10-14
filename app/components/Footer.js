@@ -5,9 +5,9 @@ const Footer = () => {
     <footer className="footer bg-black p-3">
       <div className="footer-content">
         <div className="question">
-          <h1 className="fw-bold">
+          <h2 className="fw-bold">
             Need your <span>lawn</span> mowed?
-          </h1>
+          </h2>
           <hr />
         </div>
         <section className="contact">
