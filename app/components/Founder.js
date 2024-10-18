@@ -22,10 +22,10 @@ const Founder = () => {
           I'm Alex, the founder of MP Green Teens, a dynamic high school run
           landscaping business. Combining a passion for nature, 3 years of
           landscaping experience, and hard work with entrepreneurial spirit,
-          I've have cultivated a dedicated team of young landscapers committed
-          to transforming local lawns and gardens in the bright community of
-          Mount Prospect. M.P. Green Teens is redefining landscaping services
-          with fresh ideas, youthful energy, and a commitment to excellence.
+          I've cultivated a dedicated team of young landscapers committed to
+          transforming local lawns and gardens in the bright community of Mount
+          Prospect. M.P. Green Teens is redefining landscaping services with
+          fresh ideas, youthful energy, and a commitment to excellence.
         </div>
       </article>
     </section>
