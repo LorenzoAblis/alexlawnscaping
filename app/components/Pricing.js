@@ -33,7 +33,7 @@ const Pricing = () => {
   return (
     <section className="pricing-section" id="pricing">
       <div className="pricing-header">
-        <h2>🍂 &nbsp; Our Services &nbsp; 🍂</h2>
+        <h2>❄️ &nbsp; Our Services &nbsp; ❄️</h2>
         <h5>
           {/* We provide many services to ensure your spaces get the proper care and
           attention. */}

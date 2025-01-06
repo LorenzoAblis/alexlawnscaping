@@ -6,7 +6,7 @@ const Founder = () => {
   return (
     <section className="founder-section" id="founder">
       <div className="founder-header">
-        <h4 className="founder-subtitle">🍁 &nbsp; The Founder &nbsp; 🍁 </h4>
+        <h4 className="founder-subtitle">☃️ &nbsp; The Founder &nbsp; ☃️ </h4>
         <h2 className="founder-title">Alex Madalinski</h2>
       </div>
       <article className="founder-content">
