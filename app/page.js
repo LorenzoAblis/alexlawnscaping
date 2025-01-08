@@ -1,6 +1,7 @@
 import { Toaster } from "react-hot-toast";
 
 import Slogan from "./components/Slogan";
+import SnowRemoval from "./components/SnowRemoval";
 import Pricing from "./components/Pricing";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
@@ -38,6 +39,9 @@ export default function Home() {
       <Navbar />
       <main>
         <Slogan />
+        <dir className="blue-bar">wd</dir>
+        <SnowRemoval />
+        <dir className="blue-bar">wd</dir>
         <Pricing />
         <Services />
         <Testimonials />

@@ -15,7 +15,9 @@ const Slogan = () => {
       <div className="img-overlay"></div>
 
       <div className="slogan-text">
-        <h1>Fall Cleanup & Lawnscaping Services in Mount Prospect, Illinois</h1>
+        <h1>
+          Winter Cleanup & Lawnscaping Services in Mount Prospect, Illinois
+        </h1>
         <p>
           Welcome to M.P. Green Teens! Our mission is to transform your lawns
           and gardens into beautiful, vibrant spaces. Let us help you achieve
