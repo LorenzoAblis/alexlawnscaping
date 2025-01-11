@@ -8,10 +8,10 @@ const SnowRemoval = () => {
         <h5>
           At MP Green Teens, we have been doing snow removal for the past 4
           years. We started as kids with only shovels and worked our way up to
-          snowblowers and powerful snow augers! Please give us a call or send an
-          email for a quote. We can do sidewalks, steps, decks, driveways, small
-          awnings, and even clean off your car for you. We can salt, either with
-          regular rock salt or pet safe ice melt to help with those icy steps,
+          snowblowers and powerful snow augers! Please text or call us for a
+          quote. We can do sidewalks, steps, decks, driveways, small awnings,
+          and even clean off your car for you. We can salt, either with regular
+          rock salt or pet safe ice melt to help with those icy steps,
           sidewalks, and walkways. We offer super reasonable prices starting at
           $15 for small areas, such as condos/townhouses, with the average
           mid-size house (driveway, steps, walkways) at around $30 - $40. Also,
