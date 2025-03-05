@@ -1,23 +1,40 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+
+const routes = [
+  { name: "Home", route: "" },
+  { name: "Services", route: "services" },
+  { name: "Testimonials", route: "testimonials" },
+  { name: "About", route: "about" },
+  { name: "Founder", route: "founder" },
+  { name: "Contact", route: "contact" },
+];
 
 const Navbar = () => {
-  const routes = [
-    { name: "Home", route: "" },
-    { name: "Services", route: "services" },
-    { name: "Testimonials", route: "testimonials" },
-    { name: "About", route: "about" },
-    { name: "Founder", route: "founder" },
-    { name: "Contact", route: "contact" },
-  ];
-
   const [scroll, setScroll] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
+  const sidebarRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => setScroll(window.scrollY > 100);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setShowSidebar(false);
+      }
+    };
+
+    if (showSidebar) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [showSidebar]);
 
   return (
     <>
@@ -28,14 +45,14 @@ const Navbar = () => {
               ? "fixed bg-primary shadow-lg transition-all duration-1000"
               : "absolute bg-transparent transition-all duration-1000"
           }
-          w-full top-0 left-0 flex items-center justify-between z-[1000]
+          w-full top-0 left-0 flex items-center justify-between z-[1000] p-2
         `}
       >
         <button
           onClick={() => setShowSidebar(true)}
           className={`${scroll ? "flex md:hidden" : "hidden"}`}
         >
-          <i className="bi bi-list text-white text-2xl"></i>
+          <i className="bi bi-list text-white text-2xl pl-5"></i>
         </button>
 
         <img
@@ -67,20 +84,18 @@ const Navbar = () => {
               {route.name}
             </a>
           ))}
-          <a
-            href="tel:224-522-4243"
-            className="flex items-center no-underline text-white font-medium text-[1.15vw] hover:text-accent"
-          >
-            <i className="bi bi-telephone-fill text-2xl"></i>
-          </a>
         </div>
 
-        <a href="tel:224-522-4243" className="block md:hidden">
-          <i className="bi bi-telephone-fill text-white text-2xl"></i>
+        <a
+          href="tel:224-522-4243"
+          className={`${scroll ? "block md:hidden" : "hidden"}`}
+        >
+          <i className="bi bi-telephone-fill text-white text-2xl pr-5"></i>
         </a>
       </nav>
 
       <aside
+        ref={sidebarRef}
         className={`
           fixed top-0 left-0 h-screen w-[50vw] bg-primary shadow-lg transition-opacity duration-500
           ${showSidebar ? "opacity-100 z-[5000]" : "opacity-0 z-[-5000]"}

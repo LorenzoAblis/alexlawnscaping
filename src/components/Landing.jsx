@@ -13,7 +13,7 @@ const Landing = () => {
         className="relative z-20 flex flex-col items-left justify-center h-full text-text text-start w-90 p-7.5"
         style={{ textShadow: "0 0 1rem black" }}
       >
-        <h1 className="text-[1.75rem] font-bold">
+        <h1 className="text-3xl font-bold">
           Winter Cleanup & Landscaping Services in Mount Prospect, Illinois
         </h1>
         <p className="mt-6 text-text font-medium">
@@ -25,7 +25,7 @@ const Landing = () => {
         <div className="mt-15">
           <a
             href="#services"
-            className="no-underline p-4 text-text text-[1.15rem] font-medium border-[0.2rem] border-accent transition-colors duration-350 hover:bg-accent"
+            className="no-underline p-4 text-text text-lg font-medium border-4 border-accent transition-colors duration-350 hover:bg-accent"
           >
             Learn More
           </a>

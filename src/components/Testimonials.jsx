@@ -30,7 +30,10 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="flex flex-col text-center mt-20 items-center">
+    <section
+      className="flex flex-col text-center mt-20 items-center"
+      id="testimonials"
+    >
       <div>
         <h4 className="text-2xl font-bold text-secondary">Testimonials</h4>
         <h2 className="text-3xl mt-5 font-bold text-primary">

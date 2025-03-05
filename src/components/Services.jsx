@@ -49,7 +49,7 @@ const ServicesCard = ({ img, title, subtitle }) => {
 };
 const Services = () => {
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center" id="services">
       <h5 className="text-center text-xl font-medium w-85">
         In addition, we offer discounts on pre-paid biweekly lawn mowing
         services listed below.
