@@ -30,11 +30,12 @@ const prices = [
 const Pricing = () => {
   return (
     <section className="flex flex-col items-center mt-15">
-      <div className="flex flex-col w-85 items-center">
+      <div className="flex flex-col w-7/8 items-center md:w-5/8">
+        <h2 className="text-2xl text-secondary font-bold">Pricing</h2>
         <h2 className="text-3xl font-bold text-primary">
           🌸 &nbsp; Our Services &nbsp; 🌸
         </h2>
-        <h5 className="text-center mt-5 font-medium">
+        <h5 className="text-center mt-7 font-medium">
           Keep your outdoor spaces looking their best with MP Green Teens! We
           offer seasonal cleanups, leaf removal, lawn aeration, pruning, and
           mulching to prepare your yard for the colder months ahead. Let us
@@ -44,11 +45,10 @@ const Pricing = () => {
         </h5>
       </div>
 
-      <h2 className="mt-10 text-2xl text-secondary font-bold">Pricing</h2>
-      <div className="mt-5 flex flex-row w-85 overflow-x-scroll snap-x snap-mandatory space-x-2 text-center pb-10">
+      <div className="mt-10 flex flex-row w-6/7 overflow-x-scroll snap-x snap-mandatory space-x-5 text-center pb-10 md:flex-wrap md:space-x-0 md:gap-10 md:justify-evenly">
         {prices.map((price, index) => (
           <div
-            className="min-w-80 bg-accent rounded-3xl snap-center p-5"
+            className="min-w-7/8 bg-accent rounded-3xl snap-center p-5 md:min-w-0 w-2/7 md:snap-none"
             key={index}
           >
             <h3 className="text-2xl text-text font-semibold">{price.title}</h3>

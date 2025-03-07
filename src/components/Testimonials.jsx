@@ -4,8 +4,8 @@ import { ref, onValue } from "firebase/database";
 
 const TestimonialsCard = ({ name, content }) => {
   return (
-    <article className="min-w-80 bg-gray-100 rounded-3xl snap-center p-5 text-start py-10 h-fit">
-      <p className="testimonials-text">{content}</p>
+    <article className="min-w-7/8 bg-gray-100 rounded-3xl snap-center p-5 text-start py-10 h-fit  md:min-w-2/5">
+      <p className="testimonials-text">"{content}"</p>
       <h4 className="mt-5 font-bold">- {name}</h4>
     </article>
   );
@@ -40,7 +40,7 @@ const Testimonials = () => {
           Voices of Satisfied Customers
         </h2>
       </div>
-      <div className="mt-10 flex flex-row w-85 overflow-x-scroll snap-x snap-mandatory space-x-2 text-center">
+      <div className="mt-10 flex flex-row w-7/8 overflow-x-scroll snap-x snap-mandatory space-x-2 text-center md:space-x-5">
         {testimonials.map(
           (testimonial, index) =>
             testimonial.approved && (

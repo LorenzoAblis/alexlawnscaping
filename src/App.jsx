@@ -6,6 +6,7 @@ import Testimonials from "./components/Testimonials";
 import Feedback from "./components/Feedback";
 import About from "./components/About";
 import Founder from "./components/Founder";
+import Contact from "./components/Contact";
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
         <Feedback />
         <About />
         <Founder />
+        <Contact />
       </Layout>
     </>
   );

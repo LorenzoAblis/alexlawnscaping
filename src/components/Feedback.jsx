@@ -61,12 +61,12 @@ const Feedback = () => {
           Help us Improve
         </h2>
       </div>
-      <form className="w-80 mt-5" onSubmit={handleSubmit}>
+      <form className="w-7/8 mt-5 md:w-3/5" onSubmit={handleSubmit}>
         <h3 className="mb-3 text-lg font-semibold text-gray-500">Your name</h3>
         <input
           type="text"
           name="name"
-          className="border-1 rounded-lg border-gray-400 w-80"
+          className="border-1 rounded-lg border-gray-400 w-full p-1"
           value={feedbackMsg.name}
           onChange={handleChange}
         />
@@ -76,13 +76,13 @@ const Feedback = () => {
         <textarea
           id="feedback"
           name="msg"
-          className="border-1 rounded-lg border-gray-400 w-80"
+          className="border-1 rounded-lg border-gray-400 w-full p-10"
           value={feedbackMsg.msg}
           onChange={handleChange}
         />
         <button
           type="submit"
-          className="w-80 rounded-2xl bg-accent p-3 mt-3 text-text font-semibold"
+          className="w-full rounded-2xl bg-accent p-3 mt-3 text-text font-semibold"
         >
           Submit
         </button>

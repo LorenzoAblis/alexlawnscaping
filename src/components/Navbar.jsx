@@ -63,8 +63,8 @@ const Navbar = () => {
           className={`
             ${
               scroll
-                ? "transition-all duration-1000 w-[15vw]"
-                : "mt-6 object-contain w-[20vw] ml-[7.5vw]"
+                ? "transition-all duration-1000 w-15 md:ml-10 md:w-1/17"
+                : "mt-6 object-contain w-20 ml-5 lg:w-1/15"
             }
             drop-shadow-lg
           `}
@@ -72,14 +72,14 @@ const Navbar = () => {
 
         <div
           className={`${
-            scroll ? "hidden md:flex md:flex-row md:gap-6 md:mr-8" : "hidden"
+            scroll ? "hidden md:flex md:flex-row md:gap-10 md:mr-8" : "hidden"
           }`}
         >
           {routes.map((route, index) => (
             <a
               key={index}
               href={`#${route.route}`}
-              className="flex items-center no-underline text-white font-medium text-[1.15vw] hover:text-accent"
+              className="flex items-center no-underline text-white font-medium text-md hover:text-accent lg:text-xl"
             >
               {route.name}
             </a>
@@ -97,7 +97,7 @@ const Navbar = () => {
       <aside
         ref={sidebarRef}
         className={`
-          fixed top-0 left-0 h-screen w-[50vw] bg-primary shadow-lg transition-opacity duration-500
+          fixed top-0 left-0 h-screen w-1/2 bg-primary shadow-lg transition-opacity duration-500
           ${showSidebar ? "opacity-100 z-[5000]" : "opacity-0 z-[-5000]"}
         `}
       >

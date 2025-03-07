@@ -34,29 +34,46 @@ const services = [
   },
 ];
 
-const ServicesCard = ({ img, title, subtitle }) => {
+const ServicesCard = ({ img, title, subtitle, index }) => {
+  const isEven = index % 2 === 0;
+
   return (
-    <article className="flex flex-col items-center gap-6">
-      <h3 className="text-2xl font-bold text-accent">{title}</h3>
-      <img
-        src={`/${img}.webp`}
-        alt={img}
-        className="w-85 rounded-3xl shadow-[0.5rem_0.5rem_0rem_var(--color-secondary)]"
-      />
-      <p className="w-80 text-center mt-5">{subtitle}</p>
+    <article className="flex flex-col items-center gap-6 md:flex-row md:gap-8 md:items-center">
+      <div
+        className={`flex flex-col items-center md:w-1/2 ${
+          isEven ? "md:order-1" : "md:order-2"
+        }`}
+      >
+        <img
+          src={`/${img}.webp`}
+          alt={img}
+          className="w-7/8 rounded-3xl shadow-[0.5rem_0.5rem_0rem_var(--color-secondary)] md:object-cover md:h-100"
+          loading="lazy"
+        />
+      </div>
+
+      <div
+        className={`w-7/8 text-center mt-5 md:w-1/2 md:text-left md:mt-0 ${
+          isEven ? "md:order-2" : "md:order-1 md:pl-15"
+        }`}
+      >
+        <h3 className="text-2xl font-bold text-accent mb-4">{title}</h3>
+        <p className="md:w-7/8">{subtitle}</p>
+      </div>
     </article>
   );
 };
+
 const Services = () => {
   return (
-    <section className="flex flex-col items-center" id="services">
-      <h5 className="text-center text-xl font-medium w-85">
+    <section className="flex flex-col items-center md:mt-10" id="services">
+      <h5 className="text-center text-xl font-medium w-7/8 md:font-bold">
         In addition, we offer discounts on pre-paid biweekly lawn mowing
         services listed below.
       </h5>
       <div className="flex flex-col mt-10 gap-10">
-        {services.map((service) => (
-          <ServicesCard key={service.img} {...service} />
+        {services.map((service, index) => (
+          <ServicesCard key={service.img} {...service} index={index} />
         ))}
       </div>
     </section>
