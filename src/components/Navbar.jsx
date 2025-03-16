@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 const routes = [
   { name: "Home", route: "" },
   { name: "Services", route: "services" },
+  { name: "Our Work", route: "beforeAfter" },
   { name: "Testimonials", route: "testimonials" },
   { name: "About", route: "about" },
   { name: "Founder", route: "founder" },
